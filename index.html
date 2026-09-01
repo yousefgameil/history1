@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30-Day Hardcore Dopamine Detox — Military Method</title>
+
+    <!-- Google Fonts: Cairo (Arabic) + Inter (English/Latin) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        /* ============================================================
+                   RESET & BASE
+                   ============================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0b0d10;
+            --bg-secondary: #13161b;
+            --bg-card: #1a1e26;
+            --bg-card-hover: #222832;
+            --border-subtle: rgba(201, 168, 76, 0.15);
+            --gold: #c9a84c;
+            --gold-dim: rgba(201, 168, 76, 0.25);
+            --gold-glow: rgba(201, 168, 76, 0.08);
+            --text-primary: #f0ede8;
+            --text-secondary: #b8b3aa;
+            --text-muted: #6b6a66;
+            --accent-red: #c0392b;
+            --accent-green: #2ecc71;
+            --shadow-card: 0 20px 40px -12px rgba(0, 0, 0, 0.8);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        ::selection {
+            background: var(--gold);
+            color: #0b0d10;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold);
+            border-radius: 10px;
+        }
+
+        /* ============================================================
+                   UTILITY
+                   ============================================================ */
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .badge-gold {
+            display: inline-block;
+            background: var(--gold-dim);
+            color: var(--gold);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 6px 18px;
+            border-radius: 50px;
+            border: 1px solid rgba(201, 168, 76, 0.2);
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+        .section-title .gold {
+            color: var(--gold);
+        }
+
+        .section-sub {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 640px;
+            margin-bottom: 40px;
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+        .text-muted {
+            color: var(--text-muted);
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 10px;
+            margin: 16px auto 24px;
+        }
+
+        /* ============================================================
+                   ANIMATIONS
+                   ============================================================ */
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulseGold {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 0 12px rgba(201, 168, 76, 0);
+            }
+        }
+
+        @keyframes glowPulse {
+            0%,
+            100% {
+                opacity: 0.6;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .anim-fade-up {
+            opacity: 0;
+            animation: fadeUp 0.7s ease forwards;
+        }
+
+        .anim-delay-1 {
+            animation-delay: 0.1s;
+        }
+        .anim-delay-2 {
+            animation-delay: 0.2s;
+        }
+        .anim-delay-3 {
+            animation-delay: 0.3s;
+        }
+        .anim-delay-4 {
+            animation-delay: 0.4s;
+        }
+        .anim-delay-5 {
+            animation-delay: 0.5s;
+        }
+        .anim-delay-6 {
+            animation-delay: 0.6s;
+        }
+        .anim-delay-7 {
+            animation-delay: 0.7s;
+        }
+
+        /* ============================================================
+                   HERO
+                   ============================================================ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.04) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 50%, rgba(201, 168, 76, 0.03) 0%, transparent 60%),
+                var(--bg-primary);
+            overflow: hidden;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(201, 168, 76, 0.02) 0%, transparent 70%);
+            pointer-events: none;
+            animation: glowPulse 6s ease-in-out infinite alternate;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(201, 168, 76, 0.08);
+            border: 1px solid rgba(201, 168, 76, 0.2);
+            padding: 8px 22px 8px 26px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--gold);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+        .hero-badge i {
+            font-size: 0.9rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.8rem, 8vw, 5.2rem);
+            font-weight: 900;
+            line-height: 1.08;
+            margin-bottom: 12px;
+        }
+        .hero h1 .gold {
+            color: var(--gold);
+        }
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, var(--gold), #f5d97a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p.lead {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--text-secondary);
+            max-width: 640px;
+            margin: 16px auto 32px;
+        }
+
+        .hero .sub-mission {
+            font-size: 1rem;
+            color: var(--text-muted);
+            max-width: 520px;
+            margin: 0 auto 36px;
+            padding: 16px 28px;
+            background: rgba(201, 168, 76, 0.04);
+            border-right: 3px solid var(--gold);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
+
+        /* Developer Credit Badge */
+        .developer-credit {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 28px;
+            background: rgba(201, 168, 76, 0.06);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-sm);
+            backdrop-filter: blur(4px);
+            margin-top: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .developer-credit i {
+            color: var(--gold);
+            font-size: 1.1rem;
+        }
+        .developer-credit .credit-label {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            letter-spacing: 0.3px;
+        }
+        .developer-credit .credit-name {
+            color: var(--gold);
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--gold);
+            color: #0b0d10;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 14px 40px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            font-family: inherit;
+        }
+        .btn-primary:hover {
+            background: #dfc26a;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px -8px rgba(201, 168, 76, 0.3);
+        }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 14px 32px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            font-family: inherit;
+        }
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            background: rgba(201, 168, 76, 0.04);
+        }
+
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px 60px;
+            margin-top: 48px;
+            padding-top: 36px;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .hero-stats .stat {
+            text-align: center;
+        }
+        .hero-stats .stat .number {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--gold);
+            display: block;
+            line-height: 1;
+        }
+        .hero-stats .stat .label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        /* ============================================================
+                   RULES GRID
+                   ============================================================ */
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 28px;
+            margin-top: 12px;
+        }
+
+        .rule-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 30px 28px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+        }
+        .rule-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-subtle);
+            transform: translateY(-4px);
+        }
+        .rule-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--gold);
+            opacity: 0.3;
+            transition: var(--transition);
+        }
+        .rule-card:hover::before {
+            opacity: 1;
+        }
+
+        .rule-card .rule-number {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background: var(--gold-dim);
+            display: inline-block;
+            padding: 2px 14px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(201, 168, 76, 0.12);
+        }
+
+        .rule-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .rule-card h3 i {
+            color: var(--gold);
+            font-size: 1.1rem;
+            opacity: 0.7;
+        }
+
+        .rule-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+        .rule-card .rule-detail {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 8px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .rule-card .rule-detail i {
+            color: var(--gold);
+            margin-left: 6px;
+            opacity: 0.6;
+        }
+
+        .rule-card .rule-tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 2px 12px;
+            border-radius: 50px;
+            margin-top: 10px;
+        }
+        .rule-card .rule-tag.danger {
+            background: rgba(192, 57, 43, 0.15);
+            color: #e74c3c;
+        }
+        .rule-card .rule-tag.success {
+            background: rgba(46, 204, 113, 0.12);
+            color: #2ecc71;
+        }
+        .rule-card .rule-tag.gold {
+            background: var(--gold-dim);
+            color: var(--gold);
+        }
+
+        /* ============================================================
+                   DAILY AUDIT
+                   ============================================================ */
+        .audit-section {
+            background: var(--bg-secondary);
+            border-radius: var(--radius);
+            padding: 48px 40px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            box-shadow: var(--shadow-card);
+        }
+
+        .audit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 20px;
+            margin: 28px 0 16px;
+        }
+
+        .audit-item {
+            text-align: center;
+            padding: 16px 10px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: var(--transition);
+        }
+        .audit-item:hover {
+            background: rgba(201, 168, 76, 0.04);
+            border-color: var(--border-subtle);
+        }
+        .audit-item .label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 6px;
+        }
+        .audit-item .stars {
+            color: var(--gold);
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+        .audit-item .stars .empty {
+            color: rgba(255, 255, 255, 0.08);
+        }
+
+        .audit-question {
+            margin-top: 28px;
+            padding: 20px 24px;
+            background: rgba(201, 168, 76, 0.04);
+            border-right: 3px solid var(--gold);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+        }
+        .audit-question strong {
+            color: var(--text-primary);
+        }
+
+        /* ============================================================
+                   FINAL COMMAND
+                   ============================================================ */
+        .final-command {
+            background: var(--bg-secondary);
+            border-radius: var(--radius);
+            padding: 56px 40px;
+            border: 1px solid rgba(201, 168, 76, 0.1);
+            box-shadow: var(--shadow-card);
+            position: relative;
+            overflow: hidden;
+        }
+        .final-command::after {
+            content: '⚔️';
+            position: absolute;
+            bottom: -20px;
+            left: -10px;
+            font-size: 12rem;
+            opacity: 0.03;
+            pointer-events: none;
+            transform: rotate(-10deg);
+        }
+
+        .final-command .command-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 20px;
+            margin: 24px 0 28px;
+        }
+        .final-command .command-list span {
+            font-size: 1.1rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 6px 18px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            color: var(--text-secondary);
+        }
+        .final-command .command-list span i {
+            color: var(--gold);
+            margin-left: 6px;
+            opacity: 0.6;
+        }
+
+        .final-command .motto {
+            font-size: clamp(1.4rem, 3vw, 2.2rem);
+            font-weight: 900;
+            line-height: 1.3;
+            margin: 20px 0 10px;
+        }
+        .final-command .motto .gold {
+            color: var(--gold);
+        }
+
+        .final-command .sub-motto {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* ============================================================
+                   PROGRESS / 30-DAY TRACKER
+                   ============================================================ */
+        .progress-tracker {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+            margin: 24px 0 10px;
+        }
+        .progress-tracker .day-dot {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            transition: var(--transition);
+            cursor: default;
+        }
+        .progress-tracker .day-dot.active {
+            background: var(--gold-dim);
+            border-color: var(--gold);
+            color: var(--gold);
+            box-shadow: 0 0 20px rgba(201, 168, 76, 0.08);
+        }
+        .progress-tracker .day-dot.done {
+            background: rgba(46, 204, 113, 0.12);
+            border-color: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
+        }
+
+        /* ============================================================
+                   FOOTER
+                   ============================================================ */
+        .footer {
+            padding: 40px 0 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        .footer .gold {
+            color: var(--gold);
+        }
+        .footer .credit-line {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+        .footer .credit-line i {
+            color: var(--gold);
+            margin-left: 10px;
+        }
+
+        /* ============================================================
+                   RESPONSIVE
+                   ============================================================ */
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 50px 0;
+            }
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            .hero .sub-mission {
+                font-size: 0.9rem;
+                padding: 14px 18px;
+            }
+            .hero-stats {
+                gap: 24px 32px;
+            }
+            .hero-stats .stat .number {
+                font-size: 1.6rem;
+            }
+
+            .rules-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .audit-section {
+                padding: 32px 20px;
+            }
+            .audit-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .final-command {
+                padding: 36px 20px;
+            }
+            .final-command .command-list span {
+                font-size: 0.9rem;
+                padding: 4px 12px;
+            }
+
+            .progress-tracker .day-dot {
+                width: 28px;
+                height: 28px;
+                font-size: 0.5rem;
+            }
+
+            .btn-primary,
+            .btn-outline {
+                padding: 12px 28px;
+                font-size: 0.9rem;
+            }
+
+            .developer-credit {
+                padding: 8px 18px;
+                gap: 8px;
+            }
+            .developer-credit .credit-name {
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .audit-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+            .audit-item {
+                padding: 12px 6px;
+            }
+            .rule-card {
+                padding: 22px 18px;
+            }
+            .container {
+                padding: 0 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+    <header class="hero">
+        <div class="container text-center" style="position:relative;z-index:1;">
+
+            <div class="hero-badge anim-fade-up">
+                <i class="fas fa-skull"></i>
+                <span>🪖 30-Day Mission</span>
+            </div>
+
+            <h1 class="anim-fade-up anim-delay-1">
+                30-DAY<br />
+                <span class="highlight">HARDCORE</span><br />
+                <span class="gold">DOPAMINE DETOX</span>
+            </h1>
+
+            <p class="lead anim-fade-up anim-delay-2">
+                <i class="fas fa-crosshairs" style="color:var(--gold);margin-left:8px;"></i>
+                Military Method — Maximum Mode
+            </p>
+
+            <div class="sub-mission anim-fade-up anim-delay-3">
+                <i class="fas fa-quote-right" style="color:var(--gold);margin-left:10px;opacity:0.5;"></i>
+                لمدة 30 يوم، أنت مش داخل تعمل "روتين". أنت داخل تعمل <strong style="color:var(--gold);">إعادة بناء لحياتك.</strong>
+                <br />
+                <span style="font-size:0.85rem;display:block;margin-top:6px;color:var(--text-muted);">
+                    Easy Dopamine = <span style="color:var(--accent-red);">OUT</span> &nbsp;·&nbsp; Work = <span style="color:var(--accent-green);">DEFAULT</span>
+                </span>
+            </div>
+
+            <!-- Developer Credit — Prominent in Hero -->
+            <div class="developer-credit anim-fade-up anim-delay-3">
+                <i class="fas fa-crown"></i>
+                <span class="credit-label">🛠️ تطوير:</span>
+                <span class="credit-name">الأول على البكالوريا — المهندس يوسف جميل</span>
+            </div>
+
+            <div class="hero-actions anim-fade-up anim-delay-4">
+                <a href="#rules" class="btn-primary">
+                    <i class="fas fa-bolt"></i> استكشف القواعد
+                </a>
+                <a href="#final" class="btn-outline">
+                    <i class="fas fa-flag"></i> المهمة النهائية
+                </a>
+            </div>
+
+            <div class="hero-stats anim-fade-up anim-delay-5">
+                <div class="stat">
+                    <span class="number">15</span>
+                    <span class="label">قواعد</span>
+                </div>
+                <div class="stat">
+                    <span class="number">30</span>
+                    <span class="label">يوم</span>
+                </div>
+                <div class="stat">
+                    <span class="number">0</span>
+                    <span class="label">أيام ميتة</span>
+                </div>
+                <div class="stat">
+                    <span class="number">⚔️</span>
+                    <span class="label">انضباط</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ============================================================
+    RULES
+    ============================================================ -->
+    <section id="rules" class="section-padding">
+        <div class="container">
+
+            <div class="text-center">
+                <span class="badge-gold"><i class="fas fa-list-ul"></i> القواعد</span>
+                <h2 class="section-title">
+                    <span class="gold">☢️</span> 15 قاعدة <br class="hide-mobile" />
+                    لإعادة <span class="gold">برمجة</span> دماغك
+                </h2>
+                <div class="divider"></div>
+                <p class="section-sub mx-auto">
+                    نظام عسكري صارم — لا تنازلات. كل قاعدة صممت لكسر دائرة الدوبامين السهل وإعادة عقلك إلى حالة الأداء القصوى.
+                </p>
+            </div>
+
+            <div class="rules-grid">
+
+                <!-- RULE 01 -->
+                <div class="rule-card anim-fade-up anim-delay-1">
+                    <span class="rule-number">☢️ Rule 01</span>
+                    <h3><i class="fas fa-ban"></i> Zero Easy Dopamine</h3>
+                    <p>30 يوم بلا TikTok، Reels، Shorts، Gaming، تصفح عشوائي، أو أي Scroll بلا هدف.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-skull"></i> مفيش "5 دقايق". لو مفيش سبب واضح تفتح الموبايل عشانه — <strong style="color:var(--gold);">متفتحهش.</strong>
+                    </div>
+                    <span class="rule-tag danger"><i class="fas fa-exclamation-triangle"></i> Zero Tolerance</span>
+                </div>
+
+                <!-- RULE 02 -->
+                <div class="rule-card anim-fade-up anim-delay-2">
+                    <span class="rule-number">📱 Rule 02</span>
+                    <h3><i class="fas fa-tools"></i> Phone = Tool</h3>
+                    <p>الموبايل مش صاحبك. الموبايل أداة. وقت المذاكرة بره الغرفة. الإشعارات OFF.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-trash-alt"></i> الشاشة الرئيسية: أقل عدد تطبيقات. كل حاجة بتسحبك للـScroll — <strong style="color:var(--accent-red);">DELETE / BLOCK.</strong>
+                    </div>
+                    <span class="rule-tag gold"><i class="fas fa-microchip"></i> أداة فقط</span>
+                </div>
+
+                <!-- RULE 03 -->
+                <div class="rule-card anim-fade-up anim-delay-3">
+                    <span class="rule-number">🧱 Rule 03</span>
+                    <h3><i class="fas fa-chair"></i> Desk = Work Zone</h3>
+                    <p>قعدت على المكتب؟ اشتغل. مش "هظبط المكتب" أو "هغير الـplaylist".</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-gavel"></i> المكتب له وظيفة واحدة: <strong style="color:var(--gold);">📚 WORK.</strong>
+                    </div>
+                    <span class="rule-tag success"><i class="fas fa-check-circle"></i> منطقة حرب</span>
+                </div>
+
+                <!-- RULE 04 -->
+                <div class="rule-card anim-fade-up anim-delay-4">
+                    <span class="rule-number">☠️ Rule 04</span>
+                    <h3><i class="fas fa-door-open"></i> No Escape</h3>
+                    <p>زهقت؟ مفيش TikTok. تعبت؟ مفيش Gaming. مش عايز تبدأ؟ مفيش Scrolling.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-walking"></i> عندك: تمشية · مياه · حركة · هوا وشمس · صلاة · أكل · دش — وبعدين <strong style="color:var(--gold);">BACK TO WORK.</strong>
+                    </div>
+                    <span class="rule-tag danger"><i class="fas fa-fist-raised"></i> لا مفر</span>
+                </div>
+
+                <!-- RULE 05 -->
+                <div class="rule-card anim-fade-up anim-delay-5">
+                    <span class="rule-number">⚔️ Rule 05</span>
+                    <h3><i class="fas fa-infinity"></i> No Target Hours</h3>
+                    <p>مش "هاذاكر 8 ساعات" ولا "لازم 12". القاعدة: طالما صاحي وقادر بجودة كويسة → أنا متاح للعمل.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-arrow-right"></i> مفيش سقف مصطنع. لكن لو التركيز انهار: <strong style="color:var(--gold);">REST → RECOVER → RETURN.</strong>
+                    </div>
+                    <span class="rule-tag gold"><i class="fas fa-clock"></i> بلا حدود</span>
+                </div>
+
+                <!-- RULE 06 -->
+                <div class="rule-card anim-fade-up anim-delay-6">
+                    <span class="rule-number">🧠 Rule 06</span>
+                    <h3><i class="fas fa-brain"></i> Active Study</h3>
+                    <p>ممنوع قراءة سلبية طول اليوم. استخدم حل، Recall، شرح بصوت عالي، أسئلة، امتحانات، مراجعة أخطاء.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-bullseye"></i> كل جلسة لازم يكون فيها <strong style="color:var(--gold);">OUTPUT.</strong> مش مجرد "قعدت قدام الكتاب".
+                    </div>
+                    <span class="rule-tag success"><i class="fas fa-fire"></i> إنتاج</span>
+                </div>
+
+                <!-- RULE 07 -->
+                <div class="rule-card anim-fade-up anim-delay-7">
+                    <span class="rule-number">🔥 Rule 07</span>
+                    <h3><i class="fas fa-bolt"></i> First Energy = Hardest Task</h3>
+                    <p>أعلى طاقة عندك؟ مش هتضيعها في حاجة سهلة. ابدأ بالأصعب: Physics / Math / Grammar / أي مادة محتاجة تفكير.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-arrow-up"></i> الأصعب أولاً — <strong style="color:var(--gold);">ثم الأسهل.</strong>
+                    </div>
+                    <span class="rule-tag gold"><i class="fas fa-crown"></i> الأولوية</span>
+                </div>
+
+                <!-- RULE 08 -->
+                <div class="rule-card anim-fade-up anim-delay-1">
+                    <span class="rule-number">🏃‍♂️ Rule 08</span>
+                    <h3><i class="fas fa-dumbbell"></i> Train the Body</h3>
+                    <p>كل يوم فيه حركة. تمرين حسب قدرتك — Walk، Cardio، Training مناسب.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-heart"></i> الهدف: <strong style="color:var(--gold);">Healthy Body → Better Brain.</strong> مش إنك تستنزف نفسك.
+                    </div>
+                    <span class="rule-tag success"><i class="fas fa-running"></i> حركة يومية</span>
+                </div>
+
+                <!-- RULE 09 -->
+                <div class="rule-card anim-fade-up anim-delay-2">
+                    <span class="rule-number">🌍 Rule 09</span>
+                    <h3><i class="fas fa-globe-africa"></i> Real Life Dopamine</h3>
+                    <p>عايز ترفيه؟ خده من الحياة الحقيقية: أصحاب · خروج · رياضة · شمس · إنجاز · كلام · قراءة.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-check-circle"></i> مش لازم تعيش راهب. لكن <strong style="color:var(--gold);">Real Life > Digital Stimulation.</strong>
+                    </div>
+                    <span class="rule-tag gold"><i class="fas fa-sun"></i> حياة حقيقية</span>
+                </div>
+
+                <!-- RULE 10 -->
+                <div class="rule-card anim-fade-up anim-delay-3">
+                    <span class="rule-number">☀️ Rule 10</span>
+                    <h3><i class="fas fa-sun"></i> Morning Lock</h3>
+                    <p>أول فترة بعد الاستيقاظ: مفيش Social Media، Shorts، أخبار عشوائية، تصفح.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-arrow-right"></i> ابدأ بـ: <strong style="color:var(--gold);">Wake → Wash → Pray → Eat → Study.</strong> أول Dopamine = Achievement.
+                    </div>
+                    <span class="rule-tag success"><i class="fas fa-lock"></i> قفل الصباح</span>
+                </div>
+
+                <!-- RULE 11 -->
+                <div class="rule-card anim-fade-up anim-delay-4">
+                    <span class="rule-number">🌙 Rule 11</span>
+                    <h3><i class="fas fa-moon"></i> Night Lock</h3>
+                    <p>آخر فترة قبل النوم: أقل شاشات ممكنة. راجع يومك: ماذا أنجزت؟ ما الذي ضيع وقتي؟ ما أول مهمة غدًا؟</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-bed"></i> النوم مش ضعف. <strong style="color:var(--gold);">النوم جزء من الـMilitary System.</strong>
+                    </div>
+                    <span class="rule-tag gold"><i class="fas fa-lock"></i> قفل الليل</span>
+                </div>
+
+                <!-- RULE 12 -->
+                <div class="rule-card anim-fade-up anim-delay-5">
+                    <span class="rule-number">💀 Rule 12</span>
+                    <h3><i class="fas fa-ban"></i> No Zero Day</h3>
+                    <p>ضيعت الصبح؟ ابدأ الظهر. ضيعت الظهر؟ ابدأ العصر. ضيعت اليوم كله؟ ابدأ الآن.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-skull"></i> ممنوع جملة: <strong style="color:var(--accent-red);">"خلاص بكرة."</strong>
+                    </div>
+                    <span class="rule-tag danger"><i class="fas fa-exclamation-circle"></i> صفر أيام ميتة</span>
+                </div>
+
+                <!-- RULE 13 -->
+                <div class="rule-card anim-fade-up anim-delay-6">
+                    <span class="rule-number">🧨 Rule 13</span>
+                    <h3><i class="fas fa-sync-alt"></i> The Reset Button</h3>
+                    <p>لو وقعت في scrolling — ممنوع تكمل لأن "اليوم باظ". اعمل: CLOSE → STAND UP → WATER → WALK 2 MIN → BACK TO WORK.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-undo-alt"></i> الخطأ: <strong style="color:var(--gold);">ثواني.</strong> مش باقي اليوم.
+                    </div>
+                    <span class="rule-tag gold"><i class="fas fa-redo-alt"></i> إعادة ضبط</span>
+                </div>
+
+                <!-- RULE 14 -->
+                <div class="rule-card anim-fade-up anim-delay-7">
+                    <span class="rule-number">🏆 Rule 14</span>
+                    <h3><i class="fas fa-trophy"></i> Reward System</h3>
+                    <p>مش هتكافئ نفسك بـ 3 ساعات Scroll. المكافأة: تمرين · خروج · أصحاب · وقت اجتماعي حقيقي · نشاط بتحبه.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-arrow-right"></i> المخ يتعلم: <strong style="color:var(--gold);">EFFORT → REWARD</strong> بدل BOREDOM → SCROLL.
+                    </div>
+                    <span class="rule-tag success"><i class="fas fa-gem"></i> مكافأة ذكية</span>
+                </div>
+
+                <!-- RULE 15 -->
+                <div class="rule-card anim-fade-up anim-delay-1">
+                    <span class="rule-number">⚠️ Rule 15</span>
+                    <h3><i class="fas fa-shield-alt"></i> No Stupid Extremes</h3>
+                    <p>Hardcore لا يعني قلة نوم، تجويع، منع الأكل، إجبار نفسك على الألم، 20 ساعة على المكتب، أو معاقبة نفسك بدنيًا.</p>
+                    <div class="rule-detail">
+                        <i class="fas fa-heart"></i> دي مش Discipline. دي <strong style="color:var(--accent-red);">Self-Sabotage.</strong> الـHardcore الحقيقي: <strong style="color:var(--gold);">تعمل الصح حتى لما نفسك مش عايزاه.</strong>
+                    </div>
+                    <span class="rule-tag danger"><i class="fas fa-exclamation-triangle"></i> لا للتطرف</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+    DAILY AUDIT
+    ============================================================ -->
+    <section class="section-padding" style="padding-top:0;">
+        <div class="container">
+
+            <div class="audit-section anim-fade-up">
+                <div class="text-center">
+                    <span class="badge-gold"><i class="fas fa-clipboard-check"></i> تقييم يومي</span>
+                    <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);">
+                        <span class="gold">📊</span> Daily Audit
+                    </h2>
+                    <div class="divider"></div>
+                    <p class="section-sub mx-auto" style="font-size:0.95rem;">
+                        قيّم نفسك كل ليلة بصراحة. هذه هي بوصلتك للتحسن اليومي.
+                    </p>
+                </div>
+
+                <div class="audit-grid">
+                    <div class="audit-item">
+                        <span class="label">Study</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="audit-item">
+                        <span class="label">Phone Control</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="audit-item">
+                        <span class="label">Training</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="audit-item">
+                        <span class="label">Sleep</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="audit-item">
+                        <span class="label">Discipline</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audit-question">
+                    <i class="fas fa-question-circle" style="color:var(--gold);margin-left:12px;"></i>
+                    <strong>"إيه أكتر حاجة سرقت تركيزي النهارده؟"</strong>
+                    <span style="display:block;margin-top:6px;font-size:0.9rem;color:var(--text-muted);">
+                        بكرة: <span style="color:var(--gold);">اقتلها.</span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+    30-DAY TRACKER
+    ============================================================ -->
+    <section class="section-padding" style="padding-top:0;">
+        <div class="container">
+
+            <div class="text-center anim-fade-up">
+                <span class="badge-gold"><i class="fas fa-calendar-alt"></i> التقدم</span>
+                <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);">
+                    <span class="gold">⚔️</span> 30-Day <span class="gold">Mission</span> Tracker
+                </h2>
+                <div class="divider"></div>
+                <p class="section-sub mx-auto" style="font-size:0.95rem;">
+                    كل نقطة تمثل يومًا. النقاط الذهبية هي أيامك المنتصرة.
+                </p>
+            </div>
+
+            <div class="progress-tracker anim-fade-up anim-delay-2">
+                <!-- JavaScript will generate 30 dots -->
+            </div>
+
+            <p class="text-center text-muted" style="font-size:0.8rem;margin-top:16px;">
+                <i class="fas fa-circle" style="color:var(--gold);font-size:0.5rem;"></i> يوم مكتمل &nbsp;·&nbsp;
+                <i class="fas fa-circle" style="color:rgba(255,255,255,0.04);font-size:0.5rem;"></i> يوم قادم
+            </p>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FINAL COMMAND
+    ============================================================ -->
+    <section id="final" class="section-padding" style="padding-top:0;">
+        <div class="container">
+
+            <div class="final-command anim-fade-up">
+
+                <div style="position:relative;z-index:1;">
+
+                    <div class="text-center">
+                        <span class="badge-gold"><i class="fas fa-flag"></i> المهمة النهائية</span>
+                        <h2 class="section-title" style="font-size:clamp(1.8rem,4vw,2.8rem);">
+                            <span class="gold">🪖</span> FINAL <span class="gold">COMMAND</span>
+                        </h2>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="command-list">
+                        <span><i class="fas fa-bell"></i> WAKE UP</span>
+                        <span><i class="fas fa-ban"></i> NO SCROLLING</span>
+                        <span><i class="fas fa-book"></i> STUDY</span>
+                        <span><i class="fas fa-utensils"></i> EAT</span>
+                        <span><i class="fas fa-hands-praying"></i> PRAY</span>
+                        <span><i class="fas fa-dumbbell"></i> TRAIN</span>
+                        <span><i class="fas fa-book-open"></i> STUDY AGAIN</span>
+                        <span><i class="fas fa-heart"></i> LIVE</span>
+                        <span><i class="fas fa-bed"></i> SLEEP</span>
+                        <span><i class="fas fa-sync-alt"></i> REPEAT</span>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="motto">
+                            ولو زهقت: <span class="gold">KEEP GOING.</span><br />
+                            ولو وقعت: <span class="gold">GET BACK.</span><br />
+                            ولو مفيش Motivation: <span class="gold">DO IT ANYWAY.</span>
+                        </div>
+
+                        <div style="margin:24px 0 12px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;">
+                            <span style="font-weight:700;color:var(--gold);font-size:1.1rem;">⚔️ 30 DAYS.</span>
+                            <span style="font-weight:700;color:var(--gold);font-size:1.1rem;">🪖 NO EASY DOPAMINE.</span>
+                            <span style="font-weight:700;color:var(--gold);font-size:1.1rem;">📚 NO ZERO DAYS.</span>
+                            <span style="font-weight:700;color:var(--gold);font-size:1.1rem;">🔥 WORK. TRAIN. LIVE. REPEAT.</span>
+                        </div>
+
+                        <p class="sub-motto" style="max-width:500px;margin:16px auto 0;">
+                            <i class="fas fa-quote-left" style="color:var(--gold);margin-left:8px;opacity:0.4;"></i>
+                            بعد 30 يوم، هتبني علاقة مختلفة مع المذاكرة، الموبايل، الملل، الرياضة، النوم، والوقت.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <i class="fas fa-skull" style="color:var(--gold);opacity:0.4;margin-left:8px;"></i>
+                Designed for the <span class="gold">30-Day Hardcore Dopamine Detox</span>
+                <span style="display:inline-block;margin:0 8px;">·</span>
+                🪖 Military Method — Maximum Mode
+            </p>
+            <!-- CREDIT LINE IN FOOTER -->
+            <p class="credit-line">
+                <i class="fas fa-crown"></i>
+                تم تطوير هذا النظام والموقع بالكامل بواسطة:
+                <strong style="color:var(--gold); font-weight: 700;">الأول على البكالوريا المهندس يوسف جميل</strong>
+            </p>
+            <p style="margin-top:6px;font-size:0.75rem;opacity:0.5;">
+                No easy dopamine. No zero days. Work. Train. Live. Repeat.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
+    <script>
+        (function() {
+            'use strict';
+
+            // ------------------------------------------------------------
+            // 1. Progress Tracker — 30 dots (simulate days 1–30)
+            // ------------------------------------------------------------
+            const tracker = document.querySelector('.progress-tracker');
+            if (tracker) {
+                const totalDays = 30;
+                // For demo: mark first 7 days as "done" (gold), next 3 as "active" (pulsing)
+                // and the rest as inactive. You can change these numbers.
+                const doneCount = 0; // set to 0 to start fresh
+                const activeCount = 0; // set to 0 for no active
+
+                for (let i = 1; i <= totalDays; i++) {
+                    const dot = document.createElement('span');
+                    dot.className = 'day-dot';
+                    dot.textContent = i;
+
+                    if (i <= doneCount) {
+                        dot.classList.add('done');
+                        dot.style.color = '#2ecc71';
+                        dot.style.borderColor = 'rgba(46,204,113,0.2)';
+                    } else if (i <= doneCount + activeCount) {
+                        dot.classList.add('active');
+                        dot.style.animation = 'pulseGold 1.8s ease-in-out infinite';
+                    } else {
+                        // inactive
+                    }
+
+                    tracker.appendChild(dot);
+                }
+            }
+
+            // ------------------------------------------------------------
+            // 2. Intersection Observer — reveal animations on scroll
+            // ------------------------------------------------------------
+            const animElements = document.querySelectorAll('.anim-fade-up');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        // already has animation from CSS; just ensure it plays
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.08,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            animElements.forEach(el => {
+                // If already visible, don't observe
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.style.opacity = '1';
+                } else {
+                    observer.observe(el);
+                }
+            });
+
+            // Also observe cards inside rules-grid that might not have the class
+            document.querySelectorAll('.rule-card').forEach(card => {
+                if (card.style.opacity !== '1') {
+                    observer.observe(card);
+                }
+            });
+
+            // ------------------------------------------------------------
+            // 3. Smooth anchor scroll
+            // ------------------------------------------------------------
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // ------------------------------------------------------------
+            // 4. Small touch: star rating interactivity (cosmetic)
+            // ------------------------------------------------------------
+            document.querySelectorAll('.audit-item .stars').forEach(starContainer => {
+                const stars = starContainer.querySelectorAll('.fa-star');
+                // Make them interactive — on click, set rating
+                stars.forEach((star, index) => {
+                    star.style.cursor = 'pointer';
+                    star.addEventListener('click', function() {
+                        const parent = this.closest('.stars');
+                        const allStars = parent.querySelectorAll('.fa-star');
+                        // Reset all to gold
+                        allStars.forEach(s => {
+                            s.style.color = 'var(--gold)';
+                            s.classList.remove('empty');
+                        });
+                        // Dim stars after the clicked one
+                        for (let i = index + 1; i < allStars.length; i++) {
+                            allStars[i].style.color = 'rgba(255,255,255,0.08)';
+                            allStars[i].classList.add('empty');
+                        }
+                    });
+                    // Hover effect
+                    star.addEventListener('mouseenter', function() {
+                        const parent = this.closest('.stars');
+                        const allStars = parent.querySelectorAll('.fa-star');
+                        const idx = Array.from(allStars).indexOf(this);
+                        allStars.forEach((s, i) => {
+                            if (i <= idx) {
+                                s.style.color = 'var(--gold)';
+                            } else {
+                                s.style.color = 'rgba(255,255,255,0.08)';
+                            }
+                        });
+                    });
+                    star.addEventListener('mouseleave', function() {
+                        const parent = this.closest('.stars');
+                        const allStars = parent.querySelectorAll('.fa-star');
+                        // Restore to whatever is "set" — if any are dimmed from click, keep them
+                        // For simplicity: if a click happened, we store a data attribute
+                        const hasClicked = parent.dataset.rated;
+                        if (!hasClicked) {
+                            allStars.forEach(s => {
+                                s.style.color = 'var(--gold)';
+                                s.classList.remove('empty');
+                            });
+                        }
+                    });
+                });
+            });
+
+            // ------------------------------------------------------------
+            // 5. Set initial opacity for anything that might have been missed
+            // ------------------------------------------------------------
+            setTimeout(() => {
+                document.querySelectorAll('.anim-fade-up').forEach(el => {
+                    el.style.opacity = '1';
+                });
+            }, 1200);
+
+        })();
+    </script>
+
+</body>
+</html>
