@@ -1,1359 +1,698 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30-Day Hardcore Dopamine Detox — Military Method</title>
-
-    <!-- Google Fonts: Cairo (Arabic) + Inter (English/Latin) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
-
-    <!-- Font Awesome 6 (Free) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-    <style>
-        /* ============================================================
-                   RESET & BASE
-                   ============================================================ */
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #0b0d10;
-            --bg-secondary: #13161b;
-            --bg-card: #1a1e26;
-            --bg-card-hover: #222832;
-            --border-subtle: rgba(201, 168, 76, 0.15);
-            --gold: #c9a84c;
-            --gold-dim: rgba(201, 168, 76, 0.25);
-            --gold-glow: rgba(201, 168, 76, 0.08);
-            --text-primary: #f0ede8;
-            --text-secondary: #b8b3aa;
-            --text-muted: #6b6a66;
-            --accent-red: #c0392b;
-            --accent-green: #2ecc71;
-            --shadow-card: 0 20px 40px -12px rgba(0, 0, 0, 0.8);
-            --radius: 16px;
-            --radius-sm: 10px;
-            --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        html {
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        body {
-            font-family: 'Cairo', 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            overflow-x: hidden;
-            padding: 0;
-            margin: 0;
-        }
-
-        ::selection {
-            background: var(--gold);
-            color: #0b0d10;
-        }
-
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: var(--bg-secondary);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--gold);
-            border-radius: 10px;
-        }
-
-        /* ============================================================
-                   UTILITY
-                   ============================================================ */
-        .container {
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        .section-padding {
-            padding: 80px 0;
-        }
-
-        .badge-gold {
-            display: inline-block;
-            background: var(--gold-dim);
-            color: var(--gold);
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            padding: 6px 18px;
-            border-radius: 50px;
-            border: 1px solid rgba(201, 168, 76, 0.2);
-            margin-bottom: 16px;
-        }
-
-        .section-title {
-            font-size: clamp(2rem, 5vw, 3.2rem);
-            font-weight: 900;
-            line-height: 1.2;
-            margin-bottom: 12px;
-        }
-        .section-title .gold {
-            color: var(--gold);
-        }
-
-        .section-sub {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            max-width: 640px;
-            margin-bottom: 40px;
-        }
-
-        .text-gold {
-            color: var(--gold);
-        }
-        .text-muted {
-            color: var(--text-muted);
-        }
-        .text-center {
-            text-align: center;
-        }
-        .mx-auto {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .divider {
-            width: 60px;
-            height: 3px;
-            background: var(--gold);
-            border-radius: 10px;
-            margin: 16px auto 24px;
-        }
-
-        /* ============================================================
-                   ANIMATIONS
-                   ============================================================ */
-        @keyframes fadeUp {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes pulseGold {
-            0%,
-            100% {
-                box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.3);
-            }
-            50% {
-                box-shadow: 0 0 0 12px rgba(201, 168, 76, 0);
-            }
-        }
-
-        @keyframes glowPulse {
-            0%,
-            100% {
-                opacity: 0.6;
-            }
-            50% {
-                opacity: 1;
-            }
-        }
-
-        .anim-fade-up {
-            opacity: 0;
-            animation: fadeUp 0.7s ease forwards;
-        }
-
-        .anim-delay-1 {
-            animation-delay: 0.1s;
-        }
-        .anim-delay-2 {
-            animation-delay: 0.2s;
-        }
-        .anim-delay-3 {
-            animation-delay: 0.3s;
-        }
-        .anim-delay-4 {
-            animation-delay: 0.4s;
-        }
-        .anim-delay-5 {
-            animation-delay: 0.5s;
-        }
-        .anim-delay-6 {
-            animation-delay: 0.6s;
-        }
-        .anim-delay-7 {
-            animation-delay: 0.7s;
-        }
-
-        /* ============================================================
-                   HERO
-                   ============================================================ */
-        .hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background:
-                radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.04) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 50%, rgba(201, 168, 76, 0.03) 0%, transparent 60%),
-                var(--bg-primary);
-            overflow: hidden;
-            padding: 40px 0;
-            border-bottom: 1px solid var(--border-subtle);
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at center, rgba(201, 168, 76, 0.02) 0%, transparent 70%);
-            pointer-events: none;
-            animation: glowPulse 6s ease-in-out infinite alternate;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(201, 168, 76, 0.08);
-            border: 1px solid rgba(201, 168, 76, 0.2);
-            padding: 8px 22px 8px 26px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--gold);
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 28px;
-        }
-        .hero-badge i {
-            font-size: 0.9rem;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.8rem, 8vw, 5.2rem);
-            font-weight: 900;
-            line-height: 1.08;
-            margin-bottom: 12px;
-        }
-        .hero h1 .gold {
-            color: var(--gold);
-        }
-        .hero h1 .highlight {
-            background: linear-gradient(135deg, var(--gold), #f5d97a);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p.lead {
-            font-size: clamp(1.1rem, 2vw, 1.4rem);
-            color: var(--text-secondary);
-            max-width: 640px;
-            margin: 16px auto 32px;
-        }
-
-        .hero .sub-mission {
-            font-size: 1rem;
-            color: var(--text-muted);
-            max-width: 520px;
-            margin: 0 auto 36px;
-            padding: 16px 28px;
-            background: rgba(201, 168, 76, 0.04);
-            border-right: 3px solid var(--gold);
-            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-        }
-
-        /* Developer Credit Badge */
-        .developer-credit {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            padding: 10px 28px;
-            background: rgba(201, 168, 76, 0.06);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-sm);
-            backdrop-filter: blur(4px);
-            margin-top: 12px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .developer-credit i {
-            color: var(--gold);
-            font-size: 1.1rem;
-        }
-        .developer-credit .credit-label {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            letter-spacing: 0.3px;
-        }
-        .developer-credit .credit-name {
-            color: var(--gold);
-            font-size: 1rem;
-            font-weight: 700;
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            margin-top: 24px;
-        }
-
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: var(--gold);
-            color: #0b0d10;
-            font-weight: 700;
-            font-size: 1rem;
-            padding: 14px 40px;
-            border-radius: 50px;
-            border: none;
-            cursor: pointer;
-            transition: var(--transition);
-            text-decoration: none;
-            font-family: inherit;
-        }
-        .btn-primary:hover {
-            background: #dfc26a;
-            transform: translateY(-2px);
-            box-shadow: 0 12px 30px -8px rgba(201, 168, 76, 0.3);
-        }
-
-        .btn-outline {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: transparent;
-            color: var(--text-primary);
-            font-weight: 600;
-            font-size: 0.95rem;
-            padding: 14px 32px;
-            border-radius: 50px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            cursor: pointer;
-            transition: var(--transition);
-            text-decoration: none;
-            font-family: inherit;
-        }
-        .btn-outline:hover {
-            border-color: var(--gold);
-            color: var(--gold);
-            background: rgba(201, 168, 76, 0.04);
-        }
-
-        .hero-stats {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px 60px;
-            margin-top: 48px;
-            padding-top: 36px;
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
-        }
-        .hero-stats .stat {
-            text-align: center;
-        }
-        .hero-stats .stat .number {
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: var(--gold);
-            display: block;
-            line-height: 1;
-        }
-        .hero-stats .stat .label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 4px;
-        }
-
-        /* ============================================================
-                   RULES GRID
-                   ============================================================ */
-        .rules-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 28px;
-            margin-top: 12px;
-        }
-
-        .rule-card {
-            background: var(--bg-card);
-            border-radius: var(--radius);
-            padding: 30px 28px;
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-            box-shadow: var(--shadow-card);
-        }
-        .rule-card:hover {
-            background: var(--bg-card-hover);
-            border-color: var(--border-subtle);
-            transform: translateY(-4px);
-        }
-        .rule-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--gold);
-            opacity: 0.3;
-            transition: var(--transition);
-        }
-        .rule-card:hover::before {
-            opacity: 1;
-        }
-
-        .rule-card .rule-number {
-            font-size: 0.7rem;
-            font-weight: 700;
-            color: var(--gold);
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            background: var(--gold-dim);
-            display: inline-block;
-            padding: 2px 14px;
-            border-radius: 50px;
-            margin-bottom: 12px;
-            border: 1px solid rgba(201, 168, 76, 0.12);
-        }
-
-        .rule-card h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .rule-card h3 i {
-            color: var(--gold);
-            font-size: 1.1rem;
-            opacity: 0.7;
-        }
-
-        .rule-card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 6px;
-        }
-        .rule-card .rule-detail {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-top: 8px;
-            padding-top: 12px;
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
-        }
-        .rule-card .rule-detail i {
-            color: var(--gold);
-            margin-left: 6px;
-            opacity: 0.6;
-        }
-
-        .rule-card .rule-tag {
-            display: inline-block;
-            font-size: 0.65rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            padding: 2px 12px;
-            border-radius: 50px;
-            margin-top: 10px;
-        }
-        .rule-card .rule-tag.danger {
-            background: rgba(192, 57, 43, 0.15);
-            color: #e74c3c;
-        }
-        .rule-card .rule-tag.success {
-            background: rgba(46, 204, 113, 0.12);
-            color: #2ecc71;
-        }
-        .rule-card .rule-tag.gold {
-            background: var(--gold-dim);
-            color: var(--gold);
-        }
-
-        /* ============================================================
-                   DAILY AUDIT
-                   ============================================================ */
-        .audit-section {
-            background: var(--bg-secondary);
-            border-radius: var(--radius);
-            padding: 48px 40px;
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            box-shadow: var(--shadow-card);
-        }
-
-        .audit-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 20px;
-            margin: 28px 0 16px;
-        }
-
-        .audit-item {
-            text-align: center;
-            padding: 16px 10px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: var(--radius-sm);
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            transition: var(--transition);
-        }
-        .audit-item:hover {
-            background: rgba(201, 168, 76, 0.04);
-            border-color: var(--border-subtle);
-        }
-        .audit-item .label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-muted);
-            display: block;
-            margin-bottom: 6px;
-        }
-        .audit-item .stars {
-            color: var(--gold);
-            font-size: 1.2rem;
-            letter-spacing: 2px;
-        }
-        .audit-item .stars .empty {
-            color: rgba(255, 255, 255, 0.08);
-        }
-
-        .audit-question {
-            margin-top: 28px;
-            padding: 20px 24px;
-            background: rgba(201, 168, 76, 0.04);
-            border-right: 3px solid var(--gold);
-            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-        }
-        .audit-question strong {
-            color: var(--text-primary);
-        }
-
-        /* ============================================================
-                   FINAL COMMAND
-                   ============================================================ */
-        .final-command {
-            background: var(--bg-secondary);
-            border-radius: var(--radius);
-            padding: 56px 40px;
-            border: 1px solid rgba(201, 168, 76, 0.1);
-            box-shadow: var(--shadow-card);
-            position: relative;
-            overflow: hidden;
-        }
-        .final-command::after {
-            content: '⚔️';
-            position: absolute;
-            bottom: -20px;
-            left: -10px;
-            font-size: 12rem;
-            opacity: 0.03;
-            pointer-events: none;
-            transform: rotate(-10deg);
-        }
-
-        .final-command .command-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px 20px;
-            margin: 24px 0 28px;
-        }
-        .final-command .command-list span {
-            font-size: 1.1rem;
-            font-weight: 600;
-            background: rgba(255, 255, 255, 0.03);
-            padding: 6px 18px;
-            border-radius: 50px;
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            color: var(--text-secondary);
-        }
-        .final-command .command-list span i {
-            color: var(--gold);
-            margin-left: 6px;
-            opacity: 0.6;
-        }
-
-        .final-command .motto {
-            font-size: clamp(1.4rem, 3vw, 2.2rem);
-            font-weight: 900;
-            line-height: 1.3;
-            margin: 20px 0 10px;
-        }
-        .final-command .motto .gold {
-            color: var(--gold);
-        }
-
-        .final-command .sub-motto {
-            color: var(--text-muted);
-            font-size: 1rem;
-        }
-
-        /* ============================================================
-                   PROGRESS / 30-DAY TRACKER
-                   ============================================================ */
-        .progress-tracker {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 6px;
-            margin: 24px 0 10px;
-        }
-        .progress-tracker .day-dot {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.55rem;
-            font-weight: 700;
-            color: var(--text-muted);
-            transition: var(--transition);
-            cursor: default;
-        }
-        .progress-tracker .day-dot.active {
-            background: var(--gold-dim);
-            border-color: var(--gold);
-            color: var(--gold);
-            box-shadow: 0 0 20px rgba(201, 168, 76, 0.08);
-        }
-        .progress-tracker .day-dot.done {
-            background: rgba(46, 204, 113, 0.12);
-            border-color: rgba(46, 204, 113, 0.2);
-            color: #2ecc71;
-        }
-
-        /* ============================================================
-                   FOOTER
-                   ============================================================ */
-        .footer {
-            padding: 40px 0 32px;
-            border-top: 1px solid rgba(255, 255, 255, 0.03);
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-        .footer .gold {
-            color: var(--gold);
-        }
-        .footer .credit-line {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            margin-top: 8px;
-        }
-        .footer .credit-line i {
-            color: var(--gold);
-            margin-left: 10px;
-        }
-
-        /* ============================================================
-                   RESPONSIVE
-                   ============================================================ */
-        @media (max-width: 768px) {
-            .section-padding {
-                padding: 50px 0;
-            }
-            .hero h1 {
-                font-size: 2.4rem;
-            }
-            .hero .sub-mission {
-                font-size: 0.9rem;
-                padding: 14px 18px;
-            }
-            .hero-stats {
-                gap: 24px 32px;
-            }
-            .hero-stats .stat .number {
-                font-size: 1.6rem;
-            }
-
-            .rules-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .audit-section {
-                padding: 32px 20px;
-            }
-            .audit-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .final-command {
-                padding: 36px 20px;
-            }
-            .final-command .command-list span {
-                font-size: 0.9rem;
-                padding: 4px 12px;
-            }
-
-            .progress-tracker .day-dot {
-                width: 28px;
-                height: 28px;
-                font-size: 0.5rem;
-            }
-
-            .btn-primary,
-            .btn-outline {
-                padding: 12px 28px;
-                font-size: 0.9rem;
-            }
-
-            .developer-credit {
-                padding: 8px 18px;
-                gap: 8px;
-            }
-            .developer-credit .credit-name {
-                font-size: 0.85rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            .audit-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 12px;
-            }
-            .audit-item {
-                padding: 12px 6px;
-            }
-            .rule-card {
-                padding: 22px 18px;
-            }
-            .container {
-                padding: 0 16px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>يوسف بيحط على التاريخ | البكالوريا المصرية</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+:root{--bg:#f5efe0;--bg2:#fffaf0;--card:#fff;--text:#2c1810;--gold:#c9a227;--gold2:#e8c547;--nile:#1e6091;--nile2:#2a7cb8;--papyrus:#e8d9b5;--dark:#1a1a2e;--shadow:rgba(44,24,16,.15);--trap:#c0392b;--trap-bg:#fdecea;--ok:#27ae60}
+[data-theme="dark"]{--bg:#0f0f1a;--bg2:#1a1a2e;--card:#1e1e30;--text:#f0e6d2;--gold:#e8c547;--nile:#4a9fd4;--shadow:rgba(0,0,0,.5);--trap-bg:#3a1a1a}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,sans-serif}
+body{background:var(--bg);color:var(--text);line-height:1.8;transition:.4s;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(201,162,39,.08) 0,transparent 50%),radial-gradient(circle at 80% 70%,rgba(30,96,145,.08) 0,transparent 50%);pointer-events:none;z-index:0}
+header{background:linear-gradient(135deg,var(--dark),#2c1810);color:#fff;padding:1.2rem 2rem;position:sticky;top:0;z-index:100;box-shadow:0 4px 20px rgba(0,0,0,.3);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.logo{display:flex;align-items:center;gap:.8rem;font-size:1.4rem;font-weight:bold}
+.logo-icon{font-size:2rem;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+.logo-text{background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:200% auto;animation:shine 3s linear infinite}
+@keyframes shine{to{background-position:200% center}}
+.theme-btn{background:var(--gold);border:none;width:45px;height:45px;border-radius:50%;cursor:pointer;font-size:1.3rem;transition:.3s}
+.theme-btn:hover{transform:rotate(180deg) scale(1.1)}
+nav{background:var(--card);position:sticky;top:78px;z-index:99;box-shadow:0 2px 10px var(--shadow);overflow-x:auto;white-space:nowrap}
+nav ul{display:flex;list-style:none;padding:0 1rem;gap:.3rem}
+nav button{background:none;border:none;padding:1rem 1.2rem;cursor:pointer;color:var(--text);font-size:.9rem;font-weight:600;border-bottom:3px solid transparent;transition:.3s;white-space:nowrap}
+nav button:hover{color:var(--gold);background:var(--bg2)}
+nav button.active{color:var(--gold);border-bottom-color:var(--gold);background:linear-gradient(180deg,transparent,var(--bg2))}
+.container{max-width:1200px;margin:0 auto;padding:2rem 1rem;position:relative;z-index:1}
+.tab-content{display:none;animation:fadeUp .6s ease}
+.tab-content.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hero{background:linear-gradient(135deg,var(--nile),var(--nile2));color:#fff;padding:3rem 2rem;border-radius:20px;text-align:center;margin-bottom:2rem;position:relative;overflow:hidden;box-shadow:0 10px 40px var(--shadow)}
+.hero::before{content:'𓂀';position:absolute;font-size:15rem;opacity:.08;top:-3rem;left:-2rem;animation:float 6s ease-in-out infinite}
+.hero::after{content:'𓁿';position:absolute;font-size:12rem;opacity:.08;bottom:-2rem;right:-1rem;animation:float 8s ease-in-out infinite reverse}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-20px) rotate(5deg)}}
+.hero h1{font-size:2.5rem;margin-bottom:1rem;position:relative;z-index:1}
+.hero p{font-size:1.1rem;opacity:.95;position:relative;z-index:1}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin:2rem 0}
+.stat{background:var(--card);padding:1.5rem;border-radius:15px;text-align:center;box-shadow:0 4px 15px var(--shadow);transition:.3s;border-top:4px solid var(--gold)}
+.stat:hover{transform:translateY(-5px);box-shadow:0 8px 25px var(--shadow)}
+.stat-num{font-size:2.5rem;font-weight:bold;color:var(--gold)}
+.stat-label{color:var(--text);opacity:.8;margin-top:.5rem;font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.card{background:var(--card);border-radius:15px;padding:1.5rem;box-shadow:0 4px 15px var(--shadow);transition:.3s;border-right:5px solid var(--gold);cursor:pointer}
+.card:hover{transform:translateX(-8px);box-shadow:0 8px 30px var(--shadow)}
+.card h3{color:var(--nile);margin-bottom:.8rem;font-size:1.2rem}
+.card p{opacity:.85;font-size:.95rem}
+.card-icon{font-size:2rem;margin-bottom:.5rem;display:block}
+.lesson{background:var(--card);border-radius:20px;padding:2rem;margin-bottom:2rem;box-shadow:0 6px 25px var(--shadow);animation:fadeUp .6s ease}
+.lesson-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:3px solid var(--gold);flex-wrap:wrap}
+.lesson-num{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--dark);width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold;box-shadow:0 4px 15px rgba(201,162,39,.4);flex-shrink:0}
+.lesson-title{font-size:1.5rem;color:var(--nile);font-weight:bold}
+.lesson-section{margin:1.5rem 0;padding:1.2rem;border-radius:12px;background:var(--bg2);border-right:4px solid var(--nile)}
+.lesson-section h4{color:var(--gold);margin-bottom:.8rem;font-size:1.15rem}
+.dialogue{background:linear-gradient(135deg,rgba(30,96,145,.08),rgba(201,162,39,.08));padding:1.2rem;border-radius:12px;border-right:4px solid var(--gold);margin:1rem 0}
+.dialogue p{margin:.6rem 0;padding:.6rem 1rem;border-radius:10px}
+.dialogue .speaker1{background:rgba(30,96,145,.15);margin-left:2rem}
+.dialogue .speaker2{background:rgba(201,162,39,.15);margin-right:2rem}
+.dialogue strong{color:var(--gold)}
+.highlight{background:linear-gradient(135deg,#fff8e1,#ffe082);color:#5d4037;padding:1.2rem;border-radius:12px;border-right:4px solid var(--gold);margin:1rem 0;box-shadow:0 4px 15px rgba(201,162,39,.2)}
+[data-theme="dark"] .highlight{background:linear-gradient(135deg,#3a2f1a,#4a3a1a);color:#f0e6d2}
+.highlight::before{content:'💡 إضاءة: ';font-weight:bold;color:var(--trap)}
+.summary{background:linear-gradient(135deg,rgba(39,174,96,.1),rgba(39,174,96,.05));padding:1.2rem;border-radius:12px;border-right:4px solid var(--ok);margin:1rem 0}
+.summary::before{content:'📝 ملخص الدرس';display:block;font-weight:bold;color:var(--ok);margin-bottom:.8rem;font-size:1.1rem}
+.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1.5rem 0}
+.meta-card{background:var(--bg2);padding:1rem;border-radius:10px;border-top:3px solid var(--gold)}
+.meta-card h5{color:var(--nile);margin-bottom:.5rem;font-size:.95rem}
+.meta-card ul{list-style:none;font-size:.88rem}
+.meta-card li{padding:.3rem 0;border-bottom:1px dashed var(--shadow)}
+.meta-card li:last-child{border:none}
+.trap-card{background:var(--trap-bg);border:2px solid var(--trap);border-radius:15px;padding:1.5rem;margin:1rem 0;position:relative}
+.trap-card::before{content:'⚠️ فخ رقم ' attr(data-num);position:absolute;top:-12px;right:15px;background:var(--trap);color:#fff;padding:.2rem .8rem;border-radius:20px;font-size:.8rem;font-weight:bold}
+.trap-card h5{color:var(--trap);margin-bottom:.6rem;font-size:1.05rem}
+.trap-card .wrong{background:rgba(192,57,43,.15);padding:.6rem 1rem;border-radius:8px;margin:.5rem 0;border-right:3px solid var(--trap)}
+.trap-card .right{background:rgba(39,174,96,.15);padding:.6rem 1rem;border-radius:8px;margin:.5rem 0;border-right:3px solid var(--ok)}
+.trap-card .wrong::before{content:'❌ الفخ: ';font-weight:bold;color:var(--trap)}
+.trap-card .right::before{content:'✅ الصح: ';font-weight:bold;color:var(--ok)}
+.timeline{position:relative;padding-right:2rem;margin:2rem 0}
+.timeline::before{content:'';position:absolute;right:8px;top:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--gold),var(--nile));border-radius:2px}
+.timeline-item{position:relative;margin-bottom:1.5rem;padding:1rem 1.5rem;background:var(--card);border-radius:12px;box-shadow:0 4px 15px var(--shadow);transition:.3s}
+.timeline-item:hover{transform:translateX(-8px)}
+.timeline-item::before{content:'';position:absolute;right:-2rem;top:1.2rem;width:18px;height:18px;background:var(--gold);border-radius:50%;border:4px solid var(--card);box-shadow:0 0 0 3px var(--gold)}
+.timeline-year{color:var(--gold);font-weight:bold;font-size:1.1rem}
+.timeline-event{color:var(--text);margin-top:.3rem}
+.search-box{width:100%;padding:1rem 1.5rem;border:2px solid var(--gold);border-radius:50px;font-size:1rem;background:var(--card);color:var(--text);margin-bottom:1.5rem;outline:none;transition:.3s}
+.search-box:focus{box-shadow:0 0 0 5px rgba(201,162,39,.2)}
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.filter-btn{background:var(--card);border:2px solid var(--gold);color:var(--text);padding:.5rem 1.2rem;border-radius:50px;cursor:pointer;transition:.3s;font-weight:600}
+.filter-btn:hover,.filter-btn.active{background:var(--gold);color:var(--dark)}
+footer{background:var(--dark);color:#fff;text-align:center;padding:2rem;margin-top:3rem}
+footer p{opacity:.8}
+.scroll-top{position:fixed;bottom:2rem;left:2rem;width:50px;height:50px;border-radius:50%;background:var(--gold);color:var(--dark);border:none;cursor:pointer;font-size:1.3rem;box-shadow:0 4px 15px rgba(201,162,39,.5);display:none;z-index:99;transition:.3s}
+.scroll-top.show{display:block}
+.scroll-top:hover{transform:translateY(-5px)}
+.quiz-box{background:linear-gradient(135deg,rgba(201,162,39,.1),rgba(30,96,145,.1));border:2px solid var(--gold);border-radius:15px;padding:1.5rem;margin:1.5rem 0}
+.quiz-box h4{color:var(--gold);margin-bottom:1rem;font-size:1.2rem}
+.quiz-q{background:var(--card);border-radius:12px;padding:1.2rem;margin-bottom:1rem;box-shadow:0 3px 10px var(--shadow)}
+.quiz-q .q-text{font-weight:bold;margin-bottom:.8rem;color:var(--nile)}
+.quiz-options{display:grid;gap:.5rem}
+.quiz-opt{background:var(--bg2);border:2px solid transparent;padding:.8rem 1rem;border-radius:10px;cursor:pointer;transition:.3s;text-align:right;font-size:.95rem;font-family:inherit;color:var(--text)}
+.quiz-opt:hover{border-color:var(--gold);transform:translateX(-5px)}
+.quiz-opt.correct{background:rgba(39,174,96,.2);border-color:var(--ok);color:var(--ok);font-weight:bold}
+.quiz-opt.wrong{background:rgba(192,57,43,.2);border-color:var(--trap);color:var(--trap)}
+.quiz-opt:disabled{cursor:not-allowed;opacity:.7}
+.quiz-explanation{background:rgba(30,96,145,.1);padding:.8rem;border-radius:8px;margin-top:.8rem;font-size:.9rem;border-right:3px solid var(--nile);display:none}
+.quiz-explanation.show{display:block}
+.quiz-score{text-align:center;font-size:1.3rem;font-weight:bold;color:var(--gold);padding:1rem;background:var(--card);border-radius:12px;margin-top:1rem}
+.memory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:600px;margin:2rem auto}
+.memory-card{aspect-ratio:1;perspective:1000px;cursor:pointer}
+.memory-inner{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.memory-card.flipped .memory-inner{transform:rotateY(180deg)}
+.memory-face{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:bold;text-align:center;padding:.5rem;box-shadow:0 4px 15px var(--shadow)}
+.memory-front{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--dark)}
+.memory-back{background:var(--card);color:var(--nile);transform:rotateY(180deg);font-size:.85rem;padding:.5rem;border:2px solid var(--gold)}
+.memory-card.matched .memory-back{background:rgba(39,174,96,.3);border-color:var(--ok)}
+.game-info{text-align:center;margin:1rem 0;font-size:1.1rem;font-weight:bold;color:var(--nile)}
+.restart-btn{background:var(--gold);border:none;padding:.8rem 1.5rem;border-radius:50px;cursor:pointer;font-weight:bold;color:var(--dark);font-size:1rem;transition:.3s;display:block;margin:1rem auto}
+.restart-btn:hover{transform:scale(1.05);box-shadow:0 4px 15px rgba(201,162,39,.5)}
+.chart-container{background:var(--card);border-radius:15px;padding:1.5rem;margin:1.5rem 0;box-shadow:0 4px 15px var(--shadow)}
+.chart-container h3{color:var(--nile);margin-bottom:1rem;text-align:center}
+.chart-wrapper{position:relative;height:400px}
+#map{height:600px;border-radius:15px;box-shadow:0 4px 15px var(--shadow);z-index:1}
+.map-legend{background:var(--card);padding:1rem;border-radius:12px;margin-top:1rem;box-shadow:0 4px 15px var(--shadow)}
+.map-legend h4{color:var(--nile);margin-bottom:.5rem}
+.map-legend ul{list-style:none;display:flex;flex-wrap:wrap;gap:1rem}
+.map-legend li{display:flex;align-items:center;gap:.5rem}
+.legend-dot{width:15px;height:15px;border-radius:50%;display:inline-block}
+@media(max-width:768px){.hero h1{font-size:1.8rem}.lesson-title{font-size:1.2rem}nav button{padding:.8rem .9rem;font-size:.8rem}.container{padding:1rem .5rem}.lesson{padding:1.2rem}.memory-grid{grid-template-columns:repeat(3,1fr)}.chart-wrapper{height:300px}#map{height:400px}}
+</style>
 </head>
 <body>
-
-    <!-- ============================================================
-    HERO
-    ============================================================ -->
-    <header class="hero">
-        <div class="container text-center" style="position:relative;z-index:1;">
-
-            <div class="hero-badge anim-fade-up">
-                <i class="fas fa-skull"></i>
-                <span>🪖 30-Day Mission</span>
-            </div>
-
-            <h1 class="anim-fade-up anim-delay-1">
-                30-DAY<br />
-                <span class="highlight">HARDCORE</span><br />
-                <span class="gold">DOPAMINE DETOX</span>
-            </h1>
-
-            <p class="lead anim-fade-up anim-delay-2">
-                <i class="fas fa-crosshairs" style="color:var(--gold);margin-left:8px;"></i>
-                Military Method — Maximum Mode
-            </p>
-
-            <div class="sub-mission anim-fade-up anim-delay-3">
-                <i class="fas fa-quote-right" style="color:var(--gold);margin-left:10px;opacity:0.5;"></i>
-                لمدة 30 يوم، أنت مش داخل تعمل "روتين". أنت داخل تعمل <strong style="color:var(--gold);">إعادة بناء لحياتك.</strong>
-                <br />
-                <span style="font-size:0.85rem;display:block;margin-top:6px;color:var(--text-muted);">
-                    Easy Dopamine = <span style="color:var(--accent-red);">OUT</span> &nbsp;·&nbsp; Work = <span style="color:var(--accent-green);">DEFAULT</span>
-                </span>
-            </div>
-
-            <!-- Developer Credit — Prominent in Hero -->
-            <div class="developer-credit anim-fade-up anim-delay-3">
-                <i class="fas fa-crown"></i>
-                <span class="credit-label">🛠️ تطوير:</span>
-                <span class="credit-name">الأول على البكالوريا — المهندس يوسف جميل</span>
-            </div>
-
-            <div class="hero-actions anim-fade-up anim-delay-4">
-                <a href="#rules" class="btn-primary">
-                    <i class="fas fa-bolt"></i> استكشف القواعد
-                </a>
-                <a href="#final" class="btn-outline">
-                    <i class="fas fa-flag"></i> المهمة النهائية
-                </a>
-            </div>
-
-            <div class="hero-stats anim-fade-up anim-delay-5">
-                <div class="stat">
-                    <span class="number">15</span>
-                    <span class="label">قواعد</span>
-                </div>
-                <div class="stat">
-                    <span class="number">30</span>
-                    <span class="label">يوم</span>
-                </div>
-                <div class="stat">
-                    <span class="number">0</span>
-                    <span class="label">أيام ميتة</span>
-                </div>
-                <div class="stat">
-                    <span class="number">⚔️</span>
-                    <span class="label">انضباط</span>
-                </div>
-            </div>
-
-        </div>
-    </header>
-
-    <!-- ============================================================
-    RULES
-    ============================================================ -->
-    <section id="rules" class="section-padding">
-        <div class="container">
-
-            <div class="text-center">
-                <span class="badge-gold"><i class="fas fa-list-ul"></i> القواعد</span>
-                <h2 class="section-title">
-                    <span class="gold">☢️</span> 15 قاعدة <br class="hide-mobile" />
-                    لإعادة <span class="gold">برمجة</span> دماغك
-                </h2>
-                <div class="divider"></div>
-                <p class="section-sub mx-auto">
-                    نظام عسكري صارم — لا تنازلات. كل قاعدة صممت لكسر دائرة الدوبامين السهل وإعادة عقلك إلى حالة الأداء القصوى.
-                </p>
-            </div>
-
-            <div class="rules-grid">
-
-                <!-- RULE 01 -->
-                <div class="rule-card anim-fade-up anim-delay-1">
-                    <span class="rule-number">☢️ Rule 01</span>
-                    <h3><i class="fas fa-ban"></i> Zero Easy Dopamine</h3>
-                    <p>30 يوم بلا TikTok، Reels، Shorts، Gaming، تصفح عشوائي، أو أي Scroll بلا هدف.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-skull"></i> مفيش "5 دقايق". لو مفيش سبب واضح تفتح الموبايل عشانه — <strong style="color:var(--gold);">متفتحهش.</strong>
-                    </div>
-                    <span class="rule-tag danger"><i class="fas fa-exclamation-triangle"></i> Zero Tolerance</span>
-                </div>
-
-                <!-- RULE 02 -->
-                <div class="rule-card anim-fade-up anim-delay-2">
-                    <span class="rule-number">📱 Rule 02</span>
-                    <h3><i class="fas fa-tools"></i> Phone = Tool</h3>
-                    <p>الموبايل مش صاحبك. الموبايل أداة. وقت المذاكرة بره الغرفة. الإشعارات OFF.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-trash-alt"></i> الشاشة الرئيسية: أقل عدد تطبيقات. كل حاجة بتسحبك للـScroll — <strong style="color:var(--accent-red);">DELETE / BLOCK.</strong>
-                    </div>
-                    <span class="rule-tag gold"><i class="fas fa-microchip"></i> أداة فقط</span>
-                </div>
-
-                <!-- RULE 03 -->
-                <div class="rule-card anim-fade-up anim-delay-3">
-                    <span class="rule-number">🧱 Rule 03</span>
-                    <h3><i class="fas fa-chair"></i> Desk = Work Zone</h3>
-                    <p>قعدت على المكتب؟ اشتغل. مش "هظبط المكتب" أو "هغير الـplaylist".</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-gavel"></i> المكتب له وظيفة واحدة: <strong style="color:var(--gold);">📚 WORK.</strong>
-                    </div>
-                    <span class="rule-tag success"><i class="fas fa-check-circle"></i> منطقة حرب</span>
-                </div>
-
-                <!-- RULE 04 -->
-                <div class="rule-card anim-fade-up anim-delay-4">
-                    <span class="rule-number">☠️ Rule 04</span>
-                    <h3><i class="fas fa-door-open"></i> No Escape</h3>
-                    <p>زهقت؟ مفيش TikTok. تعبت؟ مفيش Gaming. مش عايز تبدأ؟ مفيش Scrolling.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-walking"></i> عندك: تمشية · مياه · حركة · هوا وشمس · صلاة · أكل · دش — وبعدين <strong style="color:var(--gold);">BACK TO WORK.</strong>
-                    </div>
-                    <span class="rule-tag danger"><i class="fas fa-fist-raised"></i> لا مفر</span>
-                </div>
-
-                <!-- RULE 05 -->
-                <div class="rule-card anim-fade-up anim-delay-5">
-                    <span class="rule-number">⚔️ Rule 05</span>
-                    <h3><i class="fas fa-infinity"></i> No Target Hours</h3>
-                    <p>مش "هاذاكر 8 ساعات" ولا "لازم 12". القاعدة: طالما صاحي وقادر بجودة كويسة → أنا متاح للعمل.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-arrow-right"></i> مفيش سقف مصطنع. لكن لو التركيز انهار: <strong style="color:var(--gold);">REST → RECOVER → RETURN.</strong>
-                    </div>
-                    <span class="rule-tag gold"><i class="fas fa-clock"></i> بلا حدود</span>
-                </div>
-
-                <!-- RULE 06 -->
-                <div class="rule-card anim-fade-up anim-delay-6">
-                    <span class="rule-number">🧠 Rule 06</span>
-                    <h3><i class="fas fa-brain"></i> Active Study</h3>
-                    <p>ممنوع قراءة سلبية طول اليوم. استخدم حل، Recall، شرح بصوت عالي، أسئلة، امتحانات، مراجعة أخطاء.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-bullseye"></i> كل جلسة لازم يكون فيها <strong style="color:var(--gold);">OUTPUT.</strong> مش مجرد "قعدت قدام الكتاب".
-                    </div>
-                    <span class="rule-tag success"><i class="fas fa-fire"></i> إنتاج</span>
-                </div>
-
-                <!-- RULE 07 -->
-                <div class="rule-card anim-fade-up anim-delay-7">
-                    <span class="rule-number">🔥 Rule 07</span>
-                    <h3><i class="fas fa-bolt"></i> First Energy = Hardest Task</h3>
-                    <p>أعلى طاقة عندك؟ مش هتضيعها في حاجة سهلة. ابدأ بالأصعب: Physics / Math / Grammar / أي مادة محتاجة تفكير.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-arrow-up"></i> الأصعب أولاً — <strong style="color:var(--gold);">ثم الأسهل.</strong>
-                    </div>
-                    <span class="rule-tag gold"><i class="fas fa-crown"></i> الأولوية</span>
-                </div>
-
-                <!-- RULE 08 -->
-                <div class="rule-card anim-fade-up anim-delay-1">
-                    <span class="rule-number">🏃‍♂️ Rule 08</span>
-                    <h3><i class="fas fa-dumbbell"></i> Train the Body</h3>
-                    <p>كل يوم فيه حركة. تمرين حسب قدرتك — Walk، Cardio، Training مناسب.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-heart"></i> الهدف: <strong style="color:var(--gold);">Healthy Body → Better Brain.</strong> مش إنك تستنزف نفسك.
-                    </div>
-                    <span class="rule-tag success"><i class="fas fa-running"></i> حركة يومية</span>
-                </div>
-
-                <!-- RULE 09 -->
-                <div class="rule-card anim-fade-up anim-delay-2">
-                    <span class="rule-number">🌍 Rule 09</span>
-                    <h3><i class="fas fa-globe-africa"></i> Real Life Dopamine</h3>
-                    <p>عايز ترفيه؟ خده من الحياة الحقيقية: أصحاب · خروج · رياضة · شمس · إنجاز · كلام · قراءة.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-check-circle"></i> مش لازم تعيش راهب. لكن <strong style="color:var(--gold);">Real Life > Digital Stimulation.</strong>
-                    </div>
-                    <span class="rule-tag gold"><i class="fas fa-sun"></i> حياة حقيقية</span>
-                </div>
-
-                <!-- RULE 10 -->
-                <div class="rule-card anim-fade-up anim-delay-3">
-                    <span class="rule-number">☀️ Rule 10</span>
-                    <h3><i class="fas fa-sun"></i> Morning Lock</h3>
-                    <p>أول فترة بعد الاستيقاظ: مفيش Social Media، Shorts، أخبار عشوائية، تصفح.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-arrow-right"></i> ابدأ بـ: <strong style="color:var(--gold);">Wake → Wash → Pray → Eat → Study.</strong> أول Dopamine = Achievement.
-                    </div>
-                    <span class="rule-tag success"><i class="fas fa-lock"></i> قفل الصباح</span>
-                </div>
-
-                <!-- RULE 11 -->
-                <div class="rule-card anim-fade-up anim-delay-4">
-                    <span class="rule-number">🌙 Rule 11</span>
-                    <h3><i class="fas fa-moon"></i> Night Lock</h3>
-                    <p>آخر فترة قبل النوم: أقل شاشات ممكنة. راجع يومك: ماذا أنجزت؟ ما الذي ضيع وقتي؟ ما أول مهمة غدًا؟</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-bed"></i> النوم مش ضعف. <strong style="color:var(--gold);">النوم جزء من الـMilitary System.</strong>
-                    </div>
-                    <span class="rule-tag gold"><i class="fas fa-lock"></i> قفل الليل</span>
-                </div>
-
-                <!-- RULE 12 -->
-                <div class="rule-card anim-fade-up anim-delay-5">
-                    <span class="rule-number">💀 Rule 12</span>
-                    <h3><i class="fas fa-ban"></i> No Zero Day</h3>
-                    <p>ضيعت الصبح؟ ابدأ الظهر. ضيعت الظهر؟ ابدأ العصر. ضيعت اليوم كله؟ ابدأ الآن.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-skull"></i> ممنوع جملة: <strong style="color:var(--accent-red);">"خلاص بكرة."</strong>
-                    </div>
-                    <span class="rule-tag danger"><i class="fas fa-exclamation-circle"></i> صفر أيام ميتة</span>
-                </div>
-
-                <!-- RULE 13 -->
-                <div class="rule-card anim-fade-up anim-delay-6">
-                    <span class="rule-number">🧨 Rule 13</span>
-                    <h3><i class="fas fa-sync-alt"></i> The Reset Button</h3>
-                    <p>لو وقعت في scrolling — ممنوع تكمل لأن "اليوم باظ". اعمل: CLOSE → STAND UP → WATER → WALK 2 MIN → BACK TO WORK.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-undo-alt"></i> الخطأ: <strong style="color:var(--gold);">ثواني.</strong> مش باقي اليوم.
-                    </div>
-                    <span class="rule-tag gold"><i class="fas fa-redo-alt"></i> إعادة ضبط</span>
-                </div>
-
-                <!-- RULE 14 -->
-                <div class="rule-card anim-fade-up anim-delay-7">
-                    <span class="rule-number">🏆 Rule 14</span>
-                    <h3><i class="fas fa-trophy"></i> Reward System</h3>
-                    <p>مش هتكافئ نفسك بـ 3 ساعات Scroll. المكافأة: تمرين · خروج · أصحاب · وقت اجتماعي حقيقي · نشاط بتحبه.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-arrow-right"></i> المخ يتعلم: <strong style="color:var(--gold);">EFFORT → REWARD</strong> بدل BOREDOM → SCROLL.
-                    </div>
-                    <span class="rule-tag success"><i class="fas fa-gem"></i> مكافأة ذكية</span>
-                </div>
-
-                <!-- RULE 15 -->
-                <div class="rule-card anim-fade-up anim-delay-1">
-                    <span class="rule-number">⚠️ Rule 15</span>
-                    <h3><i class="fas fa-shield-alt"></i> No Stupid Extremes</h3>
-                    <p>Hardcore لا يعني قلة نوم، تجويع، منع الأكل، إجبار نفسك على الألم، 20 ساعة على المكتب، أو معاقبة نفسك بدنيًا.</p>
-                    <div class="rule-detail">
-                        <i class="fas fa-heart"></i> دي مش Discipline. دي <strong style="color:var(--accent-red);">Self-Sabotage.</strong> الـHardcore الحقيقي: <strong style="color:var(--gold);">تعمل الصح حتى لما نفسك مش عايزاه.</strong>
-                    </div>
-                    <span class="rule-tag danger"><i class="fas fa-exclamation-triangle"></i> لا للتطرف</span>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ============================================================
-    DAILY AUDIT
-    ============================================================ -->
-    <section class="section-padding" style="padding-top:0;">
-        <div class="container">
-
-            <div class="audit-section anim-fade-up">
-                <div class="text-center">
-                    <span class="badge-gold"><i class="fas fa-clipboard-check"></i> تقييم يومي</span>
-                    <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);">
-                        <span class="gold">📊</span> Daily Audit
-                    </h2>
-                    <div class="divider"></div>
-                    <p class="section-sub mx-auto" style="font-size:0.95rem;">
-                        قيّم نفسك كل ليلة بصراحة. هذه هي بوصلتك للتحسن اليومي.
-                    </p>
-                </div>
-
-                <div class="audit-grid">
-                    <div class="audit-item">
-                        <span class="label">Study</span>
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="audit-item">
-                        <span class="label">Phone Control</span>
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="audit-item">
-                        <span class="label">Training</span>
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="audit-item">
-                        <span class="label">Sleep</span>
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="audit-item">
-                        <span class="label">Discipline</span>
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="audit-question">
-                    <i class="fas fa-question-circle" style="color:var(--gold);margin-left:12px;"></i>
-                    <strong>"إيه أكتر حاجة سرقت تركيزي النهارده؟"</strong>
-                    <span style="display:block;margin-top:6px;font-size:0.9rem;color:var(--text-muted);">
-                        بكرة: <span style="color:var(--gold);">اقتلها.</span>
-                    </span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ============================================================
-    30-DAY TRACKER
-    ============================================================ -->
-    <section class="section-padding" style="padding-top:0;">
-        <div class="container">
-
-            <div class="text-center anim-fade-up">
-                <span class="badge-gold"><i class="fas fa-calendar-alt"></i> التقدم</span>
-                <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);">
-                    <span class="gold">⚔️</span> 30-Day <span class="gold">Mission</span> Tracker
-                </h2>
-                <div class="divider"></div>
-                <p class="section-sub mx-auto" style="font-size:0.95rem;">
-                    كل نقطة تمثل يومًا. النقاط الذهبية هي أيامك المنتصرة.
-                </p>
-            </div>
-
-            <div class="progress-tracker anim-fade-up anim-delay-2">
-                <!-- JavaScript will generate 30 dots -->
-            </div>
-
-            <p class="text-center text-muted" style="font-size:0.8rem;margin-top:16px;">
-                <i class="fas fa-circle" style="color:var(--gold);font-size:0.5rem;"></i> يوم مكتمل &nbsp;·&nbsp;
-                <i class="fas fa-circle" style="color:rgba(255,255,255,0.04);font-size:0.5rem;"></i> يوم قادم
-            </p>
-
-        </div>
-    </section>
-
-    <!-- ============================================================
-    FINAL COMMAND
-    ============================================================ -->
-    <section id="final" class="section-padding" style="padding-top:0;">
-        <div class="container">
-
-            <div class="final-command anim-fade-up">
-
-                <div style="position:relative;z-index:1;">
-
-                    <div class="text-center">
-                        <span class="badge-gold"><i class="fas fa-flag"></i> المهمة النهائية</span>
-                        <h2 class="section-title" style="font-size:clamp(1.8rem,4vw,2.8rem);">
-                            <span class="gold">🪖</span> FINAL <span class="gold">COMMAND</span>
-                        </h2>
-                        <div class="divider"></div>
-                    </div>
-
-                    <div class="command-list">
-                        <span><i class="fas fa-bell"></i> WAKE UP</span>
-                        <span><i class="fas fa-ban"></i> NO SCROLLING</span>
-                        <span><i class="fas fa-book"></i> STUDY</span>
-                        <span><i class="fas fa-utensils"></i> EAT</span>
-                        <span><i class="fas fa-hands-praying"></i> PRAY</span>
-                        <span><i class="fas fa-dumbbell"></i> TRAIN</span>
-                        <span><i class="fas fa-book-open"></i> STUDY AGAIN</span>
-                        <span><i class="fas fa-heart"></i> LIVE</span>
-                        <span><i class="fas fa-bed"></i> SLEEP</span>
-                        <span><i class="fas fa-sync-alt"></i> REPEAT</span>
-                    </div>
-
-                    <div class="text-center">
-                        <div class="motto">
-                            ولو زهقت: <span class="gold">KEEP GOING.</span><br />
-                            ولو وقعت: <span class="gold">GET BACK.</span><br />
-                            ولو مفيش Motivation: <span class="gold">DO IT ANYWAY.</span>
-                        </div>
-
-                        <div style="margin:24px 0 12px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;">
-                            <span style="font-weight:700;color:var(--gold);font-size:1.1rem;">⚔️ 30 DAYS.</span>
-                            <span style="font-weight:700;color:var(--gold);font-size:1.1rem;">🪖 NO EASY DOPAMINE.</span>
-                            <span style="font-weight:700;color:var(--gold);font-size:1.1rem;">📚 NO ZERO DAYS.</span>
-                            <span style="font-weight:700;color:var(--gold);font-size:1.1rem;">🔥 WORK. TRAIN. LIVE. REPEAT.</span>
-                        </div>
-
-                        <p class="sub-motto" style="max-width:500px;margin:16px auto 0;">
-                            <i class="fas fa-quote-left" style="color:var(--gold);margin-left:8px;opacity:0.4;"></i>
-                            بعد 30 يوم، هتبني علاقة مختلفة مع المذاكرة، الموبايل، الملل، الرياضة، النوم، والوقت.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ============================================================
-    FOOTER
-    ============================================================ -->
-    <footer class="footer">
-        <div class="container">
-            <p>
-                <i class="fas fa-skull" style="color:var(--gold);opacity:0.4;margin-left:8px;"></i>
-                Designed for the <span class="gold">30-Day Hardcore Dopamine Detox</span>
-                <span style="display:inline-block;margin:0 8px;">·</span>
-                🪖 Military Method — Maximum Mode
-            </p>
-            <!-- CREDIT LINE IN FOOTER -->
-            <p class="credit-line">
-                <i class="fas fa-crown"></i>
-                تم تطوير هذا النظام والموقع بالكامل بواسطة:
-                <strong style="color:var(--gold); font-weight: 700;">الأول على البكالوريا المهندس يوسف جميل</strong>
-            </p>
-            <p style="margin-top:6px;font-size:0.75rem;opacity:0.5;">
-                No easy dopamine. No zero days. Work. Train. Live. Repeat.
-            </p>
-        </div>
-    </footer>
-
-    <!-- ============================================================
-    JAVASCRIPT
-    ============================================================ -->
-    <script>
-        (function() {
-            'use strict';
-
-            // ------------------------------------------------------------
-            // 1. Progress Tracker — 30 dots (simulate days 1–30)
-            // ------------------------------------------------------------
-            const tracker = document.querySelector('.progress-tracker');
-            if (tracker) {
-                const totalDays = 30;
-                // For demo: mark first 7 days as "done" (gold), next 3 as "active" (pulsing)
-                // and the rest as inactive. You can change these numbers.
-                const doneCount = 0; // set to 0 to start fresh
-                const activeCount = 0; // set to 0 for no active
-
-                for (let i = 1; i <= totalDays; i++) {
-                    const dot = document.createElement('span');
-                    dot.className = 'day-dot';
-                    dot.textContent = i;
-
-                    if (i <= doneCount) {
-                        dot.classList.add('done');
-                        dot.style.color = '#2ecc71';
-                        dot.style.borderColor = 'rgba(46,204,113,0.2)';
-                    } else if (i <= doneCount + activeCount) {
-                        dot.classList.add('active');
-                        dot.style.animation = 'pulseGold 1.8s ease-in-out infinite';
-                    } else {
-                        // inactive
-                    }
-
-                    tracker.appendChild(dot);
-                }
-            }
-
-            // ------------------------------------------------------------
-            // 2. Intersection Observer — reveal animations on scroll
-            // ------------------------------------------------------------
-            const animElements = document.querySelectorAll('.anim-fade-up');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        // already has animation from CSS; just ensure it plays
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.08,
-                rootMargin: '0px 0px -40px 0px'
-            });
-
-            animElements.forEach(el => {
-                // If already visible, don't observe
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight && rect.bottom > 0) {
-                    el.style.opacity = '1';
-                } else {
-                    observer.observe(el);
-                }
-            });
-
-            // Also observe cards inside rules-grid that might not have the class
-            document.querySelectorAll('.rule-card').forEach(card => {
-                if (card.style.opacity !== '1') {
-                    observer.observe(card);
-                }
-            });
-
-            // ------------------------------------------------------------
-            // 3. Smooth anchor scroll
-            // ------------------------------------------------------------
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        e.preventDefault();
-                        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-
-            // ------------------------------------------------------------
-            // 4. Small touch: star rating interactivity (cosmetic)
-            // ------------------------------------------------------------
-            document.querySelectorAll('.audit-item .stars').forEach(starContainer => {
-                const stars = starContainer.querySelectorAll('.fa-star');
-                // Make them interactive — on click, set rating
-                stars.forEach((star, index) => {
-                    star.style.cursor = 'pointer';
-                    star.addEventListener('click', function() {
-                        const parent = this.closest('.stars');
-                        const allStars = parent.querySelectorAll('.fa-star');
-                        // Reset all to gold
-                        allStars.forEach(s => {
-                            s.style.color = 'var(--gold)';
-                            s.classList.remove('empty');
-                        });
-                        // Dim stars after the clicked one
-                        for (let i = index + 1; i < allStars.length; i++) {
-                            allStars[i].style.color = 'rgba(255,255,255,0.08)';
-                            allStars[i].classList.add('empty');
-                        }
-                    });
-                    // Hover effect
-                    star.addEventListener('mouseenter', function() {
-                        const parent = this.closest('.stars');
-                        const allStars = parent.querySelectorAll('.fa-star');
-                        const idx = Array.from(allStars).indexOf(this);
-                        allStars.forEach((s, i) => {
-                            if (i <= idx) {
-                                s.style.color = 'var(--gold)';
-                            } else {
-                                s.style.color = 'rgba(255,255,255,0.08)';
-                            }
-                        });
-                    });
-                    star.addEventListener('mouseleave', function() {
-                        const parent = this.closest('.stars');
-                        const allStars = parent.querySelectorAll('.fa-star');
-                        // Restore to whatever is "set" — if any are dimmed from click, keep them
-                        // For simplicity: if a click happened, we store a data attribute
-                        const hasClicked = parent.dataset.rated;
-                        if (!hasClicked) {
-                            allStars.forEach(s => {
-                                s.style.color = 'var(--gold)';
-                                s.classList.remove('empty');
-                            });
-                        }
-                    });
-                });
-            });
-
-            // ------------------------------------------------------------
-            // 5. Set initial opacity for anything that might have been missed
-            // ------------------------------------------------------------
-            setTimeout(() => {
-                document.querySelectorAll('.anim-fade-up').forEach(el => {
-                    el.style.opacity = '1';
-                });
-            }, 1200);
-
-        })();
-    </script>
-
+<header>
+<div class="logo"><span class="logo-icon">𓂀</span><span class="logo-text">يوسف بيحط على التاريخ</span></div>
+<button class="theme-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
+</header>
+<nav><ul>
+<li><button class="active" onclick="showTab('home',this)">🏠 الرئيسية</button></li>
+<li><button onclick="showTab('lessons',this)">📚 الدروس</button></li>
+<li><button onclick="showTab('traps',this)">⚠️ الفخاخ</button></li>
+<li><button onclick="showTab('quiz',this)">❓ الاختبارات</button></li>
+<li><button onclick="showTab('memory',this)">🎮 الذاكرة</button></li>
+<li><button onclick="showTab('charts',this)">📊 الرسوم</button></li>
+<li><button onclick="showTab('maps',this)">🗺️ الخرائط</button></li>
+<li><button onclick="showTab('definitions',this)">📖 التعريفات</button></li>
+<li><button onclick="showTab('dates',this)">📅 التواريخ</button></li>
+<li><button onclick="showTab('figures',this)">👤 الشخصيات</button></li>
+<li><button onclick="showTab('connections',this)">🔗 المترابطة</button></li>
+</ul></nav>
+<div class="container">
+<div id="home" class="tab-content active">
+<div class="hero"><h1>🏛️ يوسف بيحط على التاريخ</h1><p>الموقع الشامل لمنهج البكالوريا المصرية — التاريخ الوطني<br>شرح مفصل • فخاخ • اختبارات • ألعاب • خرائط • رسوم</p></div>
+<div class="stats">
+<div class="stat"><div class="stat-num">12</div><div class="stat-label">درس مفصل</div></div>
+<div class="stat"><div class="stat-num">240+</div><div class="stat-label">فخ</div></div>
+<div class="stat"><div class="stat-num">60</div><div class="stat-label">سؤال تفاعلي</div></div>
+<div class="stat"><div class="stat-num">40+</div><div class="stat-label">شخصية</div></div>
+<div class="stat"><div class="stat-num">50+</div><div class="stat-label">تاريخ</div></div>
+</div>
+<h2 style="color:var(--nile);margin:2rem 0 1rem">🎯 ابدأ من هنا</h2>
+<div class="grid">
+<div class="card" onclick="showTab('lessons',document.querySelectorAll('nav button')[1])"><span class="card-icon">📚</span><h3>الدروس الـ12</h3><p>شرح مفصل بالعامية مع حوارات وإضاءات وملخصات.</p></div>
+<div class="card" onclick="showTab('traps',document.querySelectorAll('nav button')[2])"><span class="card-icon">⚠️</span><h3>فخاخ المنهج</h3><p>240+ فخ! اعرف إزاي الامتحان بينصب عليك.</p></div>
+<div class="card" onclick="showTab('quiz',document.querySelectorAll('nav button')[3])"><span class="card-icon">❓</span><h3>الاختبارات</h3><p>60 سؤال تفاعلي مع تصحيح فوري وشرح.</p></div>
+<div class="card" onclick="showTab('memory',document.querySelectorAll('nav button')[4])"><span class="card-icon">🎮</span><h3>لعبة الذاكرة</h3><p>طابق الشخصيات مع أدوارها.</p></div>
+<div class="card" onclick="showTab('charts',document.querySelectorAll('nav button')[5])"><span class="card-icon">📊</span><h3>الرسوم البيانية</h3><p>شوف المنهج بشكل بصري.</p></div>
+<div class="card" onclick="showTab('maps',document.querySelectorAll('nav button')[6])"><span class="card-icon">🗺️</span><h3>الخرائط</h3><p>الأماكن التاريخية على الخريطة.</p></div>
+</div>
+</div>
+<div id="lessons" class="tab-content"><h2 style="color:var(--nile);margin-bottom:1.5rem">📚 الدروس الـ12</h2><div id="lessonsContainer"></div></div>
+<div id="traps" class="tab-content">
+<div class="hero" style="background:linear-gradient(135deg,#c0392b,#e74c3c)"><h1>⚠️ فخاخ المنهج</h1><p>240+ فخ! متخليش حد ينصب عليك.</p></div>
+<div class="filters" id="trapFilters"></div>
+<input type="text" class="search-box" id="trapSearch" placeholder="🔍 ابحث في الفخاخ..." oninput="filterTraps()">
+<div id="trapsContainer"></div>
+</div>
+<div id="quiz" class="tab-content">
+<div class="hero" style="background:linear-gradient(135deg,#8e44ad,#9b59b6)"><h1>❓ اختبارات تفاعلية</h1><p>60 سؤال — 5 لكل درس مع تصحيح فوري</p></div>
+<div class="filters" id="quizFilters"></div>
+<div id="quizContainer"></div>
+</div>
+<div id="memory" class="tab-content">
+<div class="hero" style="background:linear-gradient(135deg,#16a085,#1abc9c)"><h1>🎮 لعبة ذاكرة الشخصيات</h1><p>اقلب الكروت وطابق كل شخصية مع دورها</p></div>
+<div class="game-info" id="gameInfo">الحركات: 0 | المطابقات: 0 / 8</div>
+<div class="memory-grid" id="memoryGrid"></div>
+<button class="restart-btn" onclick="initMemoryGame()">🔄 ابدأ من جديد</button>
+</div>
+<div id="charts" class="tab-content">
+<div class="hero" style="background:linear-gradient(135deg,#d35400,#e67e22)"><h1>📊 الرسوم البيانية</h1><p>شوف المنهج بشكل بصري</p></div>
+<div class="chart-container"><h3>📅 توزيع التواريخ حسب الدرس</h3><div class="chart-wrapper"><canvas id="chartDates"></canvas></div></div>
+<div class="chart-container"><h3>👤 توزيع الشخصيات حسب الدرس</h3><div class="chart-wrapper"><canvas id="chartFigs"></canvas></div></div>
+<div class="chart-container"><h3>⚠️ عدد الفخاخ في كل درس</h3><div class="chart-wrapper"><canvas id="chartTraps"></canvas></div></div>
+<div class="chart-container"><h3>📖 عدد التعريفات في كل درس</h3><div class="chart-wrapper"><canvas id="chartDefs"></canvas></div></div>
+</div>
+<div id="maps" class="tab-content">
+<div class="hero" style="background:linear-gradient(135deg,#2980b9,#3498db)"><h1>🗺️ الخرائط التفاعلية</h1><p>اضغط على أي علامة لتعرف قصتها</p></div>
+<div id="map"></div>
+<div class="map-legend"><h4>🎨 دليل الألوان:</h4><ul>
+<li><span class="legend-dot" style="background:#c0392b"></span> فرنسي</li>
+<li><span class="legend-dot" style="background:#2980b9"></span> بريطاني</li>
+<li><span class="legend-dot" style="background:#27ae60"></span> إيطالي</li>
+<li><span class="legend-dot" style="background:#e67e22"></span> إسباني</li>
+<li><span class="legend-dot" style="background:#8e44ad"></span> أحداث مصرية</li>
+<li><span class="legend-dot" style="background:#f39c12"></span> عواصم ومدن</li>
+</ul></div>
+</div>
+<div id="definitions" class="tab-content"><h2 style="color:var(--nile);margin-bottom:1.5rem">📖 قاموس التعريفات</h2><input type="text" class="search-box" id="defSearch" placeholder="🔍 ابحث..." oninput="filterDefs()"><div id="defsContainer"></div></div>
+<div id="dates" class="tab-content"><h2 style="color:var(--nile);margin-bottom:1.5rem">📅 الخط الزمني</h2><div class="timeline" id="datesContainer"></div></div>
+<div id="figures" class="tab-content"><h2 style="color:var(--nile);margin-bottom:1.5rem">👤 الشخصيات</h2><input type="text" class="search-box" id="figSearch" placeholder="🔍 ابحث..." oninput="filterFigs()"><div class="grid" id="figsContainer"></div></div>
+<div id="connections" class="tab-content"><h2 style="color:var(--nile);margin-bottom:1.5rem">🔗 الأحداث المترابطة</h2><div id="connContainer"></div></div>
+</div>
+<footer><p>🏛️ يوسف بيحط على التاريخ — موقع تعليمي</p><p style="margin-top:.5rem;font-size:.85rem">صُنع بحب ❤️ لطلاب مصر</p></footer>
+<button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" id="scrollBtn">↑</button>
+
+<script>
+const lessons=[
+{id:1,title:"بناء الدولة المصرية واستمرارها عبر التاريخ",
+content:`<h4>أولًا: يعني إيه "دولة"؟</h4><p>الدولة مش مجرد ناس عايشين على أرض. الدولة <strong>كيان سياسي منظم</strong> له حكومة وقوانين وحدود وشعب حاسس إنه أمة واحدة. المفهوم الحديث: <strong>وحدة سياسية تشغل حيزًا جغرافيًا محددًا، وتضم شعبًا، وتديرها سلطة، وتمارس سيادتها الداخلية والخارجية</strong>.</p>
+<h4>ثانيًا: أركان الدولة الأربعة</h4>
+<p><strong>1. الشعب:</strong> كل المواطنين الحاملين للجنسية. الدستور مادة 4: "السيادة للشعب وحده، يمارسها ويحميها، وهو مصدر السلطات".</p>
+<p><strong>2. الحيز الجغرافي:</strong> الأرض + المياه الإقليمية (12 ميل) + المجال الجوي. حدود مصر: خط عرض 22 شمالًا (السودان 1899)، ساحل المتوسط، ساحل البحر الأحمر وخليج العقبة (فلسطين 1906)، خط طول 25 شرقًا (ليبيا 1925).</p>
+<p><strong>3. السلطة:</strong> 3 سلطات: تشريعية (مجلس النواب)، تنفيذية (الرئيس والحكومة)، قضائية (المحاكم).</p>
+<p><strong>4. السيادة:</strong> استقلال الدولة في قراراتها. داخلية (تحكم نفسها) وخارجية (علاقاتها الدولية).</p>
+<h4>ثالثًا: مقومات نشأة الدولة المصرية</h4>
+<p><strong>1. الموقع الجغرافي:</strong> مصر في قلب قارات العالم القديم. حدود طبيعية حمايتها. النيل ربطها.</p>
+<p><strong>2. الموارد الطبيعية:</strong> نهر النيل هو العامل الحاسم. بدونه مصر كانت هتبقى صحراء.</p>
+<p><strong>3. التجانس البشري:</strong> المصريين من أقدم الشعوب تجانسًا. انصهروا في بوتقة واحدة.</p>
+<p><strong>4. الحكومة المركزية القوية:</strong> الملك مينا (نعرمر) وحّد القطرين حوالي 3200 ق.م.</p>
+<p><strong>5. القوة العسكرية:</strong> الجيش المصري لحماية الحدود. عقيدته: "يحنمي ويحمي ويحافظ على الأرض ولا يعتدي".</p>
+<p><strong>6. الحفاظ على الهوية:</strong> اللغة والثقافة والتراث عبر العصور.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>يوسف:</strong> يا أستاذ، يعني إيه "دولة"؟ إحنا 100 مليون على أرض، مش ده دولة؟</p><p class="speaker2"><strong>الأستاذ:</strong> لأ. الدولة كيان منظم فيه حكومة وقوانين وحدود وشعب حاسس إنه أمة. الأركان الأربعة: شعب، حيز، سلطة، سيادة.</p><p class="speaker1"><strong>يوسف:</strong> وليه مصر استمرت كل السنين دي؟</p><p class="speaker2"><strong>الأستاذ:</strong> عشان 6 مقومات: الموقع، الموارد، التجانس، الحكومة، الجيش، الهوية. النيل هو اللي خلق مصر.</p></div>`,
+highlight:`النيل مش مجرد نهر — النيل هو اللي خلق مصر. بدونه كانت مصر صحراء. جمال حمدان قال: "مصر موضعًا دولة نهر، وموقفًا دولة برزخ".`,
+summary:`<p><strong>الخلاصة:</strong> الدولة 4 أركان: شعب، حيز، سلطة، سيادة. مصر قامت ب6 مقومات. مينا وحّد القطرين 3200 ق.م.</p>`,
+definitions:[["الدولة","كيان سياسي منظم يشغل حيزًا جغرافيًا محددًا وله سيادة"],["الشعب","كل المواطنين الحاملين للجنسية"],["السيادة","استقلال الدولة في قراراتها"],["الحيز الجغرافي","الأرض + المياه الإقليمية + المجال الجوي"],["مينا (نعرمر)","وحّد القطرين 3200 ق.م"],["التجانس البشري","انصهار سكان مصر في بوتقة واحدة"]],
+dates:[["3200 ق.م","توحيد القطرين"],["1899","حدود السودان"],["1906","حدود فلسطين"],["1925","حدود ليبيا"]],
+figures:[["مينا (نعرمر)","وحّد القطرين"],["جمال حمدان","صاحب كتاب شخصية مصر"]],
+traps:[["الخلط بين الدولة والحكومة","الحكومة جزء من الدولة مش كلها"],["الاعتقاد أن الشعب=عدد","الشعب له دور سياسي واقتصادي"],["الخلط بين السيادة الداخلية والخارجية","مختلفتين"],["الحيز = الأرض فقط؟","لأ، + مياه ومجال جوي"],["الخلط بين تواريخ الحدود","1899 السودان، 1906 فلسطين، 1925 ليبيا"],["السلطة=الجيش؟","لأ، 3 سلطات"],["نسيان المادة 4","السيادة للشعب وحده"],["الأركان منفصلة؟","لأ، مترابطة"],["الخلط بين عدم الانحياز والحياد","مختلفين"],["الموقع وحده يكفي؟","لأ، 6 مقومات"],["نسيان دور الجيش","عقيدته: يحمي ولا يعتدي"],["التجانس=عدم اختلافات؟","لأ، انصهار مع تنوع"],["الخلط بين طبيعي وبشري","الطبيعي: موقع وموارد. البشري: تجانس وحكومة"],["الهوية ثابتة؟","لأ، بتتطور"],["نسيان نعرمر","أول دولة مركزية 3200 ق.م"],["الدولة قامت فجأة؟","لأ، تطور"],["الوحدة السياسية=الجغرافية؟","مختلفتين"],["الحكومة المركزية=ديكتاتورية؟","لأ"],["السيادة قابلة للانتهاك؟","أيوه، الاحتلال بينتهكها"],["النيل وحده يكفي؟","لأ"],["دولة نهر=دولة برزخ؟","الاتنين صحيحين"],["مصر عربية فقط؟","لأ، عربية وإفريقية وإسلامية"]]},
+{id:2,title:"الدولة المصرية القديمة ومقاومة الاحتلال",
+content:`<h4>أولًا: ليه مصر كانت هدف؟</h4><p>الموقع بين 3 قارات، الموارد، التحكم في طرق التجارة. الدوافع: عسكرية واقتصادية واستراتيجية.</p>
+<h4>ثانيًا: الهكسوس (1750 ق.م)</h4><p>شعب آسيوي. نجحوا بسبب: نهاية الدولة الوسطى، ضعف الحماية، أسلحة متفوقة (عجلات حربية)، تكتيكات. اتخذوا أواريس عاصمة.</p>
+<p><strong>المرحلة 1 (سقنن رع):</strong> بدأ المقاومة، قتل في المعركة.</p>
+<p><strong>المرحلة 2 (كامس):</strong> أكمل، أعاد تنظيم الجيش، حارب في مصر الوسطى.</p>
+<p><strong>المرحلة 3 (أحمس الأول):</strong> حاصر أواريس، طاردهم خارج مصر، أسس أول إمبراطورية.</p>
+<h4>ثالثًا: الغزو الفارسي (525 ق.م)</h4><p>قمبيز الثاني دخل مصر. المصريين قاوموا. أسسوا الأسرة 27.</p>
+<h4>رابعًا: الإسكندر الأكبر (332 ق.م)</h4><p>دخل ك"محرر". احترم العادات، زار آمون، أسس الإسكندرية.</p>
+<h4>خامسًا: البطالمة (323 ق.م)</h4><p>بطلميوس بن لاجوس أسس دولة البطالمة. ازدهرت الإسكندرية.</p>
+<h4>سادسًا: الرومان (30 ق.م)</h4><p>بعد أكتيوم 31 ق.م. مصر ولاية رومانية خاصة. حاكم معين من الإمبراطور. عصر الشهداء (دقلديانوس). انتشار الرهبنة واللغة القبطية.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> ليه الهكسوس نجحوا؟</p><p class="speaker2"><strong>الأستاذ:</strong> نهاية الدولة الوسطى ضعفت السلطة، والحدود مبقتش محمية. لما الداخل يضعف، الخارج يطمع.</p><p class="speaker1"><strong>طالب:</strong> وأحمس هو البطل؟</p><p class="speaker2"><strong>الأستاذ:</strong> كامس عمل حاجة مهمة، لكن مات. أحمس أكمل وانتصر.</p></div>`,
+highlight:`الهكسوس استخدموا العجلات الحربية. المصريين تعلموا منهم وطوّروا أسلحتهم — وده اللي خلّاهم يطردوهم.`,
+summary:`<p><strong>الخلاصة:</strong> احتلالات: هكسوس (1750 ق.م)، فرس (525)، إسكندر (332)، بطالمة (323)، رومان (30). ضعف الداخل يجذب الطامع.</p>`,
+definitions:[["الهكسوس","شعب آسيوي دخل مصر 1750 ق.م"],["أواريس","عاصمة الهكسوس"],["عصر الشهداء","اضطهاد روماني للمسيحيين"],["التنافس الدولي","صراع القوى الكبرى"]],
+dates:[["1750 ق.م","دخول الهكسوس"],["1550 ق.م","طرد الهكسوس"],["525 ق.م","الغزو الفارسي"],["332 ق.م","الإسكندر"],["323 ق.م","البطالمة"],["30 ق.م","الرومان"]],
+figures:[["سقنن رع","بدأ المقاومة"],["كامس","أكمل المقاومة"],["أحمس","طرد الهكسوس"],["قمبيز","قاد الغزو الفارسي"],["الإسكندر","أسس الإسكندرية"],["بطلميوس","أسس البطالمة"],["دقلديانوس","اضطهد المسيحيين"]],
+traps:[["الخلط بين الهكسوس والفرس والرومان","مختلفين"],["الهكسوس دمروا مصر؟","لأ، سيطروا على الشمال"],["الخلط بين سقنن رع وكامس وأحمس","كل واحد له دور"],["أحمس بدأ المقاومة؟","لأ، جده وأخوه"],["الطرد=الإخضاع؟","مختلفين"],["الإسكندر دخل بالقوة؟","لأ، بذكاء"],["الخلط بين البطالمة والرومان","البطالمة يونانيون، الرومان 30 ق.م"],["كليوباترا آخر ملوك فقط؟","كان فيه ملوك قبلها"],["أكتيوم وأكتاف؟","أكتيوم بس"],["الرومان احتلوا فورًا؟","لأ، صراعات"],["عصر الشهداء=الاضطهاد؟","جزء منه"],["المسيحية انتشرت بسرعة؟","لأ، تدريجيًا"],["حجر رشيد ووصف مصر؟","مختلفين"],["شامبليون مصري؟","لأ، فرنسي"],["الخلط بين الكتابات","هيروغليفية، ديموطيقية، يونانية"],["الفرس 200 سنة؟","193 سنة"],["مصر ولاية رومانية عادية؟","خاصة"],["البطالمة مصريين؟","لأ، يونانيين"],["الإسكندرية=أم الدنيا؟","أم الدنيا مصر"],["مقاومة الرومان مسلحة فقط؟","لأ، ثقافية كمان"],["مصر قوية دايمًا؟","لأ، فترات ضعف"],["الخلط بين الدول","القديمة، الوسطى، الحديثة"]]},
+{id:3,title:"التحولات الكبرى في مصر (العصر الوسيط)",
+content:`<h4>أولًا: الفتح الإسلامي (641م)</h4><p>مصر كانت ولاية بيزنطية. البيزنطيين اضطهدوا الأقباط. عمرو بن العاص دخل مصر 641م. تحولت لولاية إسلامية.</p>
+<h4>ثانيًا: الدول المتعاقبة</h4><p><strong>الطولونية (868-905):</strong> أحمد بن طولون. القطائع.</p>
+<p><strong>الإخشيدية (935-969):</strong> محمد بن طغج.</p>
+<p><strong>الفاطمية (969-1171):</strong> المعز الفاطمي. القاهرة. الأزهر.</p>
+<p><strong>الأيوبية (1171-1250):</strong> صلاح الدين. حارب الصليبيين.</p>
+<p><strong>المملوكية (1250-1517):</strong> عين جالوت 1260.</p>
+<p><strong>العثمانية (1517):</strong> سليم الأول. "درة التاج".</p>
+<h4>ثالثًا: التعريب</h4><p>العربية انتشرت تدريجيًا. تعريب الدواوين في العصر الأموي. بقت لغة العلم والثقافة.</p>
+<h4>رابعًا: التحول الثقافي</h4><p>العلماء دورهم كبير. مسجد عمرو أول مركز. الأزهر منارة. ازدهار التأليف والترجمة. المقريزي وابن إياس.</p>
+<h4>خامسًا: التحول العمراني</h4><p>الفسطاط (عمرو)، القطائع (أحمد بن طولون)، القاهرة (الفاطميون). ملامح: مسجد وسط، أسواق، قلاع.</p>
+<h4>سادسًا: الاقتصاد</h4><p>الزراعة الركيزة. الصناعة: نسيج، سكر، زجاج. التجارة: مركز بين الشرق والغرب.</p>
+<h4>سابعًا: المكانة</h4><p>قاعدة عسكرية، مركز سياسي وثقافي، حلقة وصل تجارية.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> ليه المصريين ما قاوموش الفتح؟</p><p class="speaker2"><strong>الأستاذ:</strong> كانوا تعبانين من البيزنطيين. الفتح كان فيه تسامح.</p><p class="speaker1"><strong>طالب:</strong> والمماليك عبيد؟</p><p class="speaker2"><strong>الأستاذ:</strong> أصلهم عبيد، لكن طلعوا جنود وحكام.</p></div>`,
+highlight:`الأزهر أسسه الفاطميون (شيعة!) لكن بقى منارة للسنة. رمز للوسطية.`,
+summary:`<p><strong>الخلاصة:</strong> الفتح 641م. دول متعاقبة: طولونية، إخشيدية، فاطمية، أيوبية، مملوكية، عثمانية. تحولات: تعريب، ثقافة، عمران، اقتصاد، مكانة.</p>`,
+definitions:[["التعريب","نشر اللغة العربية"],["الطولونية","دولة أحمد بن طولون"],["الفاطمية","دولة شيعية أسست القاهرة"],["الأيوبية","دولة صلاح الدين"],["المملوكية","دولة المماليك"],["الأزهر","مؤسسة دينية أسسها الفاطميون"]],
+dates:[["641م","الفتح الإسلامي"],["868م","الطولونية"],["935م","الإخشيدية"],["969م","الفاطمية والقاهرة"],["1171م","الأيوبية"],["1250م","المماليك"],["1260م","عين جالوت"],["1517م","العثمانيون"]],
+figures:[["عمرو بن العاص","فتح مصر"],["أحمد بن طولون","الطولونية"],["المعز الفاطمي","الفاطمية"],["صلاح الدين","الأيوبية"],["سليم الأول","العثمانيون"],["المقريزي","مؤرخ"],["ابن إياس","مؤرخ"]],
+traps:[["الخلط بين الدول","رتبهم صح"],["الفاطميين سنة؟","لأ، شيعة"],["صلاح الدين=أسرة أيوب؟","مؤسسها"],["المماليك عبيد فقط؟","لأ، حكام"],["البحرية والبرجية؟","فترتين"],["العثمانيين دخلوا بسهولة؟","لأ، معارك"],["درة التاج=سلعة ذغاء؟","مختلفين"],["العربية فورًا؟","لأ، تدريجيًا"],["التعريب=الأسلمة؟","مختلفين"],["الأزهر فاطمي فقط؟","تطور"],["عمرو=الأزهر؟","مختلفين"],["القاهرة فاطمية فقط؟","كان فيه مدن قبلها"],["الفسطاط=القطائع=القاهرة؟","كل واحدة مختلفة"],["العلماء بعيدين عن السياسة؟","لأ، بيديروا"],["المقريزي=ابن إياس؟","مختلفين"],["المماليك 100 سنة؟","267 سنة"],["نسيان عين جالوت","صد المغول 1260"],["العثمانيين أنهوا المماليك؟","لأ، فضل نفوذ"],["الولاية=الإيالة؟","مختلفين"],["مصر هامشية؟","لأ، مركز"],["الفاطمي=الأيوبي؟","مختلفين"],["القاهرة عاصمة فورًا؟","تدريجيًا"]]},
+{id:4,title:"التحولات الكبرى في مصر (العصر الحديث)",
+content:`<h4>أولًا: الحملة الفرنسية (1798-1801)</h4><p>نابليون. سياسات: تقرب (منشورات، علماء، مجمع علمي، دواوين)، قمع (ثورات، ضرائب)، دراسة علمية (وصف مصر، حجر رشيد).</p>
+<h4>ثانيًا: محمد علي (1805-1848)</h4><p>بنى دولة: جيش نظامي، إدارة مركزية، زراعة وصناعة، بعثات. معاهدة بلطة ليمان 1838، مؤتمر لندن 1840 أوقفوا المشروع.</p>
+<h4>ثالثًا: إسماعيل (1863-1879)</h4><p>لقب الخديو 1867. قناة السويس 1869. الديون. المراقبة الثنائية 1876. الاحتلال 1882.</p>
+<h4>رابعًا: الاقتصاد</h4><p>من اكتفاء ذاتي لتصديري. تصنيع مبكر ثم تراجع. اقتصاد تابع.</p>
+<h4>خامسًا: الاجتماع</h4><p>طبقات: عليا، متوسطة، ثالثة، دنيا. تغيرات ديموغرافية. دور المرأة محدود.</p>
+<h4>سادسًا: الفكر</h4><p>إصلاح ديني (الأفغاني، محمد عبده)، ليبرالي (لطفي السيد)، وطني (مصطفى كامل).</p>
+<h4>سابعًا: المكانة</h4><p>قوة إقليمية ثم تراجعت.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> الحملة الفرنسية احتلال ولا علمية؟</p><p class="speaker2"><strong>الأستاذ:</strong> الاتنين. فشلت عسكريًا، لكن تأثيرها الثقافي عميق.</p><p class="speaker1"><strong>طالب:</strong> ليه محمد علي نجح وإسماعيل فشل؟</p><p class="speaker2"><strong>الأستاذ:</strong> محمد علي بنى، إسماعيل أغرق في الديون.</p></div>`,
+highlight:`بلطة ليمان 1838 هي الضربة القاصمة. بريطانيا فتحت الأسواق. الصناعة ماتت.`,
+summary:`<p><strong>الخلاصة:</strong> الحملة (1798)، محمد علي (1805)، إسماعيل (1863)، الاحتلال (1882). تحولات: سياسية، اقتصادية، اجتماعية، فكرية.</p>`,
+definitions:[["الحملة الفرنسية","1798-1801"],["وصف مصر","موسوعة فرنسية"],["بلطة ليمان","1838، ألغت الاحتكار"],["المراقبة الثنائية","بريطانيا وفرنسا"],["الخديو","لقب إسماعيل"],["الليبرالي","تيار الحريات"],["الإصلاح الديني","الأفغاني ومحمد عبده"]],
+dates:[["1798","الحملة"],["1799","حجر رشيد"],["1801","خروج الفرنسيين"],["1805","محمد علي"],["1822","فك الرموز"],["1838","بلطة ليمان"],["1840","مؤتمر لندن"],["1863","إسماعيل"],["1867","الخديو"],["1869","القناة"],["1876","المراقبة"],["1882","الاحتلال"]],
+figures:[["نابليون","قائد الحملة"],["محمد علي","باني مصر"],["إسماعيل","الخديو"],["الطهطاوي","النهضة"],["الأفغاني","إصلاح ديني"],["محمد عبده","تحرير العقل"],["لطفي السيد","ليبرالي"],["مصطفى كامل","وطني"],["محمد فريد","وسّع المشاركة"]],
+traps:[["فرنسي=بريطاني؟","مختلفين"],["3 سنين كاملة؟","تقريبًا"],["1798=1801=1805؟","مختلفين"],["محمد علي مصري؟","ألباني"],["محمد علي=إسماعيل؟","مختلفين"],["بلطة ليمان لصالح مصر؟","لأ، بريطانيا"],["1838=1840=1841؟","مختلفين"],["القناة فرنسية فقط؟","شركة فرنسية بس مصرية"],["الخديو=الوالي؟","مختلفين"],["إسماعيل حفر القناة؟","سعيد بدأ"],["المراقبة=الثنائية؟","هي الثنائية"],["الديون سبب واحد؟","مش واحد"],["شكلي=فعلي؟","مختلفين"],["1882 مباشر؟","كان غير مباشر"],["المعتمد=المندوب؟","مختلفين"],["التعليم للجميع؟","محدود"],["البعثات=المدارس؟","مختلفين"],["الليبرالي=الديني؟","مختلفين"],["الأفغاني=محمد عبده؟","أستاذ وتلميذ"],["مصر قوة حتى 1840؟","حتى 1840 وبعدها تراجعت"],["1882=1914؟","مختلفين"],["إسماعيل فشل كامل؟","نجح وفشل"]]},
+{id:5,title:"سياسات الاحتلال بمصر في العصر الحديث",
+content:`<h4>أولًا: سياسات فرنسا</h4><p>تقرب: منشورات، علماء، مجمع علمي، دواوين. قمع: ثورات، ضرائب. دراسة علمية: وصف مصر، حجر رشيد. مطابع: منشورات وصحف. حجر رشيد: 3 كتابات، شامبليون 1822.</p>
+<h4>ثانيًا: التدخل الأجنبي</h4><p>بلطة ليمان 1838. مؤتمر لندن 1840. إغراق الديون. المراقبة الثنائية 1876. التدخل العسكري 1882.</p>
+<h4>ثالثًا: الاحتلال البريطاني (1882-1914)</h4><p>سيطرة سياسية: معتمد بريطاني. تفكيك الجيش. سيطرة قضائية: محاكم مختلطة. سيطرة اقتصادية: قطن، إضعاف الصناعة. التعليم: تقليل، إعداد موظفين.</p>
+<h4>رابعًا: الاحتلال غير المباشر</h4><p>شكل رسمي، سلطة فعلية للمعتمد.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> يعني إيه احتلال غير مباشر؟</p><p class="speaker2"><strong>الأستاذ:</strong> حكومة وخديو شكلي، لكن القرار في يد المعتمد البريطاني.</p></div>`,
+highlight:`المعتمد كان أقوى من الخديو. الاحتلال غير المباشر أخطر لأنه مش واضح.`,
+summary:`<p><strong>الخلاصة:</strong> سياسات فرنسا (تقرب، قمع، دراسة)، تدخل أجنبي، بريطانيا (سيطرة سياسية، تفكيك جيش، قضاء، اقتصاد، تعليم).</p>`,
+definitions:[["الاحتكار","سيطرة الدولة على الإنتاج"],["المراقبة الثنائية","إشراف بريطاني وفرنسي"],["صندوق الدين","إدارة الديون"],["الاحتلال غير المباشر","سيطرة فعلية مع شكل رسمي"],["المحاكم المختلطة","للأجانب والمصريين"],["المعتمد","ممثل بريطانيا"]],
+dates:[["1798","الحملة"],["1799","حجر رشيد"],["1822","فك الرموز"],["1838","بلطة ليمان"],["1840","مؤتمر لندن"],["1876","المراقبة"],["1882","الاحتلال"]],
+figures:[["نابليون","قائد الحملة"],["شامبليون","فك الرموز"],["محمد علي","والي"],["إسماعيل","الخديو"]],
+traps:[["فرنسا=بريطانيا؟","مختلفين"],["نابليون أراد الاحتلال فقط؟","قاعدة لضرب بريطانيا"],["منشور=أمر عسكري؟","مختلفين"],["فرنسا جاءت لتحرير؟","لمصالحها"],["وصف مصر=حجر رشيد؟","مختلفين"],["شامبليون مع الحملة؟","لأ"],["تقرب=قمع؟","الاتنين حصلوا"],["بلطة ليمان ثنائية؟","بريطانيا والعثمانيين"],["مؤتمر لندن=معاهدة لندن؟","قريبين"],["الديون لصالح مصر؟","لأ"],["المراقبة=الثنائية؟","هي الثنائية"],["صندوق الدين مصري؟","أوروبي"],["الاحتلال=الحماية؟","مختلفين"],["1882=1914؟","مختلفين"],["غير مباشر=مباشر؟","مختلفين"],["التعليم محايد؟","موجه للاحتلال"],["مختلطة=أهلية؟","مختلفين"],["الجيش قوي؟","ضعيف"],["المعتمد=المندوب؟","مختلفين"],["الاحتلال انتهى 1922؟","شكليًا بس"],["سياسات واحدة؟","مختلفة"],["1882=1914=1922؟","مختلفين"]]},
+{id:6,title:"صمود الشعب المصري ومقاومة الاحتلال",
+content:`<h4>أولًا: بداية الوعي</h4><p>الحملة الفرنسية صدمة حضارية. علماء، مطابع، دواوين. تأمل نقدي.</p>
+<h4>ثانيًا: محمد علي — التطبيق</h4><p>جيش، اقتصاد، تعليم، بعثات. من فكر لواقع.</p>
+<h4>ثالثًا: المثقفون</h4><p><strong>الطهطاوي:</strong> جمع بين الحداثة والتراث. مدرسة الألسن.</p>
+<p><strong>الأفغاني:</strong> من فهم لواقع لعمل سياسي. مقاومة الاستعمار. الجامعة الإسلامية.</p>
+<p><strong>محمد عبده:</strong> تحرير العقل. تجديد الفكر الديني. إصلاح التعليم.</p>
+<h4>رابعًا: الثورة العرابية (1881-1882)</h4><p>من إدراك لفعل. شعار "مصر للمصريين". تلاحم جيش وشعب.</p>
+<h4>خامسًا: مصطفى كامل ومحمد فريد</h4><p><strong>مصطفى كامل:</strong> جريدة اللواء، دنشواي، الحزب الوطني، الجامعة المصرية.</p>
+<p><strong>محمد فريد:</strong> وسّع المشاركة، رفض مد امتياز القناة، تعليم إلزامي، نقابات عمالية.</p>
+<h4>سادسًا: سعد زغلول و1919</h4><p>حركة شعبية شاملة. الوفد. الوحدة الوطنية (الهلال مع الصليب). نتائج: تصريح 28 فبراير 1922، دستور 1923.</p>
+<h4>سابعًا: المرأة</h4><p>هدى شعراوي: قادت العمل النسائي. صفية زغلول: دعمت النضال.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> يعني إيه وعي قومي؟</p><p class="speaker2"><strong>الأستاذ:</strong> إدراك الشعب لحقوقه وإحساسه بالانتماء لوطن واحد.</p><p class="speaker1"><strong>طالب:</strong> ليه 1919 نقطة فاصلة؟</p><p class="speaker2"><strong>الأستاذ:</strong> أول مرة الشعب كله يخرج: مسلمين ومسيحيين، رجال ونساء.</p></div>`,
+highlight:`ثورة 1919 كانت أول ثورة شعبية شاملة. الوحدة الوطنية كانت أقوى من أي وقت.`,
+summary:`<p><strong>الخلاصة:</strong> تطور الوعي: الحملة، محمد علي، المثقفون، العرابية، مصطفى كامل، 1919. المرأة دورها مهم.</p>`,
+definitions:[["الوعي القومي","إدراك الشعب لحقوقه"],["العرابية","1881-1882"],["دنشواي","1906"],["الوفد","حزب سعد زغلول"],["تصريح 28 فبراير","1922"],["دستور 1923","أول دستور بعد التصريح"]],
+dates:[["1798","الحملة"],["1881","العرابية"],["1882","الاحتلال"],["1906","دنشواي"],["1907","الحزب الوطني"],["1919","الثورة"],["1922","تصريح 28 فبراير"],["1923","الدستور"]],
+figures:[["الطهطاوي","النهضة الفكرية"],["الأفغاني","مقاومة الاستعمار"],["محمد عبده","تحرير العقل"],["عرابي","الثورة العرابية"],["مصطفى كامل","الحزب الوطني"],["محمد فريد","وسّع المشاركة"],["سعد زغلول","قائد 1919"],["هدى شعراوي","العمل النسائي"],["صفية زغلول","دعمت النضال"]],
+traps:[["العرابية=1919؟","مختلفين"],["عرابي خائن؟","لأ، وطني"],["شعار خاطئ؟","مصر للمصريين"],["مصطفى كامل أسس الوفد؟","الحزب الوطني"],["مصطفى=محمد فريد؟","مختلفين"],["سعد أسس الوفد 1919؟","الفكرة قبل كده"],["الوفد=حزب الوفد؟","مختلفين"],["1919 حققت استقلال كامل؟","شكلي"],["تصريح=دستور؟","مختلفين"],["هدى الأولى؟","كان فيه رائدات"],["صفية=هدى؟","مختلفين"],["المرأة في 1919 فقط؟","استمرت"],["الهلال والصليب؟","رمز الوحدة"],["العلماء ما شاركوش؟","شاركوا"],["الأزهر=الكنيسة؟","مختلفين"],["الوعي فجأة؟","تدريجي"],["الوعي=الثورة؟","مختلفين"],["الحملة بداية فقط؟","تطور بعدها"],["الطهطاوي=الأفغاني؟","مختلفين"],["محمد عبده سياسي فقط؟","مفكر ديني"],["1919=1922=1923؟","مختلفين"],["1919 نهاية النضال؟","بداية مرحلة"]]},
+{id:7,title:"ثورة 23 يوليو والتحولات الكبرى في مصر",
+content:`<h4>أولًا: عوامل الثورة</h4><p><strong>سياسية:</strong> نظام شكلي، سلطة القصر والاحتلال، ضعف الأحزاب. الوفد 7 سنين فقط من 1924-1952.</p>
+<p><strong>حادثة 4 فبراير 1942:</strong> بريطانيا اعتدت على السيادة. حاصرت قصر الملك. أجبرته على تعيين النحاس.</p>
+<p><strong>نكبة 1948:</strong> كشفت هشاشة الدولة. عدم جاهزية الجيش. فساد.</p>
+<p><strong>اجتماعية واقتصادية:</strong> ظاهرة النصف في المئة. تهميش. انخفاض أجور. بطالة.</p>
+<h4>ثانيًا: المقدمات</h4><p>إلغاء معاهدة 1936 (النحاس، أكتوبر 1951). انتخابات نادي الضباط (ديسمبر 1951، فوز نجيب). الاعتداء على قسم الإسماعيلية (25 يناير 1952). حريق القاهرة (26 يناير 1952).</p>
+<h4>ثالثًا: قيام الثورة</h4><p>23 يوليو 1952. الضباط الأحرار. سيطرة على الحربية والإذاعة. تنازل فاروق 26 يوليو.</p>
+<h4>رابعًا: النتائج</h4><p>الجلاء (اتفاقية 1954، جلاء 1956). تأميم القناة 1956. الإصلاح الزراعي. مجانية التعليم. تمصير الشركات.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> ليه الثورة قامت؟</p><p class="speaker2"><strong>الأستاذ:</strong> تراكم أزمات: سياسية، عسكرية، اجتماعية.</p><p class="speaker1"><strong>طالب:</strong> وليه 4 فبراير مهمة؟</p><p class="speaker2"><strong>الأستاذ:</strong> كشفت ضعف الملك وعززت شعور الضباط بضرورة التغيير.</p></div>`,
+highlight:`ثورة 23 يوليو مش انقلاب عسكري — ثورة شعبية بدعم الضباط الأحرار.`,
+summary:`<p><strong>الخلاصة:</strong> عوامل: سياسية، 4 فبراير، نكبة 1948، اجتماعية. مقدمات: إلغاء 1936، نادي الضباط، الإسماعيلية، حريق القاهرة. نتائج: الجلاء، التأميم، إصلاحات.</p>`,
+definitions:[["الضباط الأحرار","قادوا الثورة"],["نكبة 1948","هزيمة فلسطين"],["النصف في المئة","تركز الثروة"],["الإصلاح الزراعي","إعادة توزيع الأراضي"],["تأميم القناة","1956"],["اتفاقية الجلاء","1954"]],
+dates:[["1942","4 فبراير"],["1948","نكبة"],["1951","إلغاء 1936"],["1952","الثورة"],["1954","اتفاقية الجلاء"],["1956","التأميم والعدوان"]],
+figures:[["محمد نجيب","أول رئيس"],["جمال عبد الناصر","قائد الثورة"],["فاروق","آخر ملوك"],["النحاس","ألغى 1936"]],
+traps:[["23=26 يوليو؟","مختلفين"],["الثورة 1952 فقط؟","تراكمات"],["الأحرار=مجلس قيادة؟","مختلفين"],["نجيب قائد؟","ظاهريًا"],["ناصر=نجيب؟","مختلفين"],["1948 فقط؟","عوامل تانية"],["4 فبراير=26 يناير؟","مختلفين"],["حريق القاهرة مدبر؟","آراء"],["الجلاء=التأميم؟","مختلفين"],["التأميم سهل؟","عدوان ثلاثي"],["العدوان=الحرب العالمية؟","1956"],["السد العالي بني كامل؟","بتمويل سوفيتي"],["الإصلاح الزراعي=التأميم؟","مختلفين"],["الملكية انتهت فورًا؟","1953"],["فاروق=أحمد فؤاد؟","مختلفين"],["الثورة عسكرية فقط؟","بدعم شعبي"],["مجلس قيادة=وزراء؟","مختلفين"],["ناصر رئيس 1952؟","1956"],["الجمهورية=الملكية؟","انتهت 1953"],["الثورة حققت كل أهدافها؟","لأ"],["1952=1954=1956؟","مختلفين"],["الجلاء سهل؟","مفاوضات"]]},
+{id:8,title:"الهُوية الوطنية في مواجهة الاستعمار الجديد",
+content:`<h4>أولًا: الاستعمار الجديد</h4><p>القديم: احتلال عسكري. الجديد: اقتصادي وتكنولوجي وثقافي. أدواته: اقتصاد، إعلام، تكنولوجيا، ثقافة.</p>
+<h4>ثانيًا: الأدوات</h4><p><strong>اقتصادية:</strong> فخ الديون.</p>
+<p><strong>تكنولوجية:</strong> احتكار التكنولوجيا، التحكم في الإنترنت، البيانات.</p>
+<p><strong>حروب الجيل الرابع:</strong> غير تقليدية، تستهدف العقول.</p>
+<h4>ثالثًا: حروب الجيل الرابع</h4><p><strong>الإعلام المضلل:</strong> استهداف العقول، تحويل الأحداث لأزمات.</p>
+<p><strong>المنصات الرقمية:</strong> خوارزميات، فقاعات معلوماتية، استهداف الشباب.</p>
+<p><strong>استقطاب الشباب:</strong> الفئة الأكثر استهدافًا.</p>
+<p><strong>قيادات وهمية:</strong> شخصيات غير فاعلة.</p>
+<p><strong>تشويه التاريخ:</strong> فصل المواطن عن جذوره.</p>
+<p><strong>استهداف القيم:</strong> الفردية والاستهلاك.</p>
+<p><strong>الإرهاب:</strong> أداة استنزاف.</p>
+<h4>رابعًا: الحماية</h4><p>الأسرة: غرس القيم. المؤسسات التعليمية والدينية: المناعة الفكرية. الإعلام الوطني: رواية موضوعية.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> يعني إيه استعمار جديد؟</p><p class="speaker2"><strong>الأستاذ:</strong> مش بيحتل أرضك، لكن بيحتل وعيك. إعلام وتكنولوجيا واقتصاد.</p><p class="speaker1"><strong>طالب:</strong> وحروب الجيل الرابع؟</p><p class="speaker2"><strong>الأستاذ:</strong> مش تقليدية. تستهدف العقول. أخطر من السلاح.</p></div>`,
+highlight:`الاستعمار الجديد أخطر لأنه مستخبي. بيجيلك في محتوى أو فيلم أو أغنية. بيغير قيمك من غير ما تحس.`,
+summary:`<p><strong>الخلاصة:</strong> استعمار جديد: اقتصادي وتكنولوجي وثقافي. حروب الجيل الرابع: إعلام مضلل، منصات، استقطاب، قيادات وهمية، تشويه تاريخ، استهداف قيم، إرهاب. الحماية: أسرة، مؤسسات، إعلام وطني.</p>`,
+definitions:[["الاستعمار الجديد","سيطرة غير مباشرة"],["حروب الجيل الرابع","حروب تستهدف العقول"],["الإعلام المضلل","تشويه الحقائق"],["الفقاعة المعلوماتية","عزل الفرد"],["المناعة الفكرية","مقاومة الأفكار"],["الاستقطاب","جذب فئة"]],
+dates:[["2003","الغزو الأمريكي للعراق"],["2007","هجمات إستونيا"]],
+figures:[["جمال عبد الناصر","قائد الثورة"],["نيلسون مانديلا","رمز المقاومة"]],
+traps:[["قديم=جديد؟","مختلفين"],["الاستعمار انتهى؟","جديد ظهر"],["الجيل الثالث=الرابع؟","مختلفين"],["الرابع=تقليدي؟","لأ"],["الإعلام=المضلل؟","مختلفين"],["المنصات محايدة؟","لأ"],["الفقاعة=التضليل؟","مختلفين"],["الشباب ضحايا فقط؟","لأ، دور"],["القيم=السلوك؟","مختلفين"],["الإرهاب=دين؟","لأ"],["الإرهاب=المقاومة؟","مختلفين"],["الأسرة وحدها؟","جزء"],["التعليمية=الدينية؟","مختلفين"],["الأزهر فقط؟","كلهم"],["الوطني=الرسمي؟","مختلفين"],["حروب جديدة؟","موجودة من زمان"],["تزييف الوعي=التاريخ؟","جزء"],["الوعي=المعرفة؟","أعمق"],["المناعة الفكرية=الجسدية؟","مختلفين"],["الهوية ثابتة؟","بتتطور"],["الرابع=السيبراني؟","جزء"],["الجديد عسكري؟","لأ"]]},
+{id:9,title:"حركات التحرر الوطني ضد الاحتلال الفرنسي والإيطالي",
+content:`<h4>أولًا: السيطرة الفرنسية</h4><p><strong>عسكرية:</strong> مصر 1798، الجزائر 1830، تونس 1881، المغرب 1912، موريتانيا، سوريا ولبنان 1920.</p>
+<p><strong>اقتصادية:</strong> استنزاف الثروات. الجزائر (الكروم)، موريتانيا (الحديد).</p>
+<p><strong>ثقافية:</strong> اللغة الفرنسية، توجيه التعليم.</p>
+<p><strong>اجتماعية:</strong> إثارة نزاعات، تفكيك روابط.</p>
+<h4>ثانيًا: السيطرة الإيطالية في ليبيا</h4><p>عسكرية: حملات، قواعد. اقتصادية: أراضٍ للمستوطنين. ثقافية: تعليم ديني. اجتماعية: قمع، معسكرات، تهجير.</p>
+<h4>ثالثًا: أساليب المقاومة</h4><p><strong>مسلحة:</strong> ليبيا (عمر المختار)، الجزائر (1954-1962)، سوريا (1925)، موريتانيا (ماء العينين).</p>
+<p><strong>سياسية:</strong> المغرب (حزب الاستقلال)، تونس (الحزب الدستوري)، سوريا (الكتلة الوطنية).</p>
+<p><strong>القيادة الوطنية:</strong> ركيزة أساسية.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> ليه فرنسا احتلت الجزائر؟</p><p class="speaker2"><strong>الأستاذ:</strong> الدافع المعلن حادثة المروحة 1827، لكن الحقيقي التوسع.</p><p class="speaker1"><strong>طالب:</strong> وإيطاليا ليه ليبيا؟</p><p class="speaker2"><strong>الأستاذ:</strong> المنافسة والموقع والموارد.</p></div>`,
+highlight:`حادثة المروحة ذريعة. الداي حسين ضرب القنصل بالمروحة في خلاف على ديون. فرنسا استغلتها.`,
+summary:`<p><strong>الخلاصة:</strong> فرنسا: عسكرية، اقتصادية، ثقافية، اجتماعية. إيطاليا: مشابهة. المقاومة: مسلحة، سياسية، قيادة وطنية.</p>`,
+definitions:[["الانتداب","نظام دولي بعد الحرب العالمية الأولى"],["حادثة المروحة","1827، ذريعة احتلال الجزائر"],["جبهة التحرير","قادت ثورة الجزائر"],["الهيمنة الثقافية","سيطرة على الثقافة"],["تفكيك البنية","إضعاف الروابط"]],
+dates:[["1798","مصر"],["1827","المروحة"],["1830","الجزائر"],["1881","تونس"],["1912","المغرب"],["1920","سوريا ولبنان"],["1925","الثورة السورية"],["1931","إعدام عمر المختار"],["1954","ثورة الجزائر"],["1962","استقلال الجزائر"]],
+figures:[["عمر المختار","ليبيا"],["أحمد بن بلة","الجزائر"],["هواري بومدين","الجزائر"],["العربي بن مهيدي","الجزائر"],["سلطان الأطرش","سوريا"],["علال الفاسي","المغرب"],["بورقيبة","تونس"],["ماء العينين","موريتانيا"]],
+traps:[["فرنسي=إيطالي؟","فرنسا أوسع"],["1830 فقط؟","132 سنة"],["تونس=المغرب؟","مختلفين"],["1911 فقط؟","20 سنة مقاومة"],["المختار=الخطابي؟","مختلفين"],["المختار مصري؟","ليبي"],["استعمار=حماية؟","مختلفين"],["حماية=استقلال؟","لأ"],["انتداب=حماية؟","مختلفين"],["سوريا مستعمرة؟","انتداب"],["سورية=جزائرية؟","مختلفين"],["الجزائر 1954؟","استقلت 1962"],["جبهة=وفد؟","مختلفين"],["بن بلة وحده؟","فيه قادة"],["مسلحة=سياسية؟","مختلفين"],["السياسي كافي؟","لأ"],["قيادة=شعب؟","الشعب أساس"],["ثقافية ضعيفة؟","لأ"],["تعليم=تلقين؟","مختلفين"],["تفكيك سهل؟","لأ"],["1830=1881=1912؟","مختلفين"],["المقاومة انتهت بالاستقلال؟","لأ"]]},
+{id:10,title:"حركات التحرر الوطني ضد الاحتلال البريطاني والإسباني",
+content:`<h4>أولًا: السيطرة البريطانية</h4><p><strong>عسكرية:</strong> قواعد، قوات، تدخل. مصر 1882، السودان، عدن، العراق وفلسطين 1920.</p>
+<p><strong>سياسية:</strong> تدخل، مستشارين، معاهدات.</p>
+<p><strong>اقتصادية:</strong> قناة السويس، القطن، تجارة الخليج، نفط العراق.</p>
+<p><strong>ثقافية:</strong> اللغة الإنجليزية، مدارس أجنبية، بعثات.</p>
+<p><strong>اجتماعية:</strong> نخب متعلمة، تأثير في المجتمع.</p>
+<p>إسبانيا في شمال المغرب (سبتة، مليلة) اتبعت سياسات مشابهة.</p>
+<h4>ثانيًا: المقاومة</h4><p><strong>مسلحة:</strong> مصر (جمعية الانتقام، 1919)، العراق (1920)، فلسطين (انتفاضات)، المغرب (الخطابي).</p>
+<p><strong>سياسية:</strong> أحزاب، وفود، مؤتمرات.</p>
+<p><strong>القيادة:</strong> الخطابي، ناصر، الكيلاني.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> الفرق بين البريطاني والفرنسي؟</p><p class="speaker2"><strong>الأستاذ:</strong> بريطانيا غير مباشر (معتمد، معاهدات)، فرنسا مباشر (حماية، انتداب).</p></div>`,
+highlight:`الخطابي قاد مقاومة ضد إسبانيا. هزمهم في أنوال 1921. فرنسا وإسبانيا تحالفوا ضده.`,
+summary:`<p><strong>الخلاصة:</strong> بريطانيا: عسكرية، سياسية، اقتصادية، ثقافية، اجتماعية. إسبانيا مشابهة. المقاومة: مسلحة، سياسية، قيادة.</p>`,
+definitions:[["الحماية","شكل استعمار"],["الانتداب","نظام دولي"],["جمعية الانتقام","تنظيم سري مصري"],["ثورة 1920","ثورة العراق"],["أنوال","معركة 1921"]],
+dates:[["1882","الاحتلال"],["1914","الحماية"],["1920","ثورة العراق"],["1921","أنوال"],["1922","تصريح"],["1936","معاهدة"]],
+figures:[["الخطابي","المغرب"],["ناصر","مصر"],["الكيلاني","العراق"],["سعد زغلول","1919"]],
+traps:[["بريطاني=إسباني؟","بريطانيا أوسع"],["1882 فقط؟","حماية 1914"],["حماية=احتلال؟","مختلفين"],["1936 أنهت الاحتلال؟","لأ"],["مصر=السودان؟","مختلفين"],["عدن 1839 فقط؟","استمرت"],["العراق=فلسطين؟","الاتنين انتداب"],["انتداب=استعمار؟","شكل"],["عراقية=فلسطينية؟","مختلفين"],["فلسطين 1948 فقط؟","1920 انتداب"],["بلفور=انتداب؟","مختلفين"],["فلسطين 1917؟","الانتداب 1920"],["مسلحة=سلمية؟","مختلفين"],["الخطابي مصري؟","مغربي"],["ريف=صحراء؟","مختلفين"],["إسبانيا احتلت الكل؟","الشمال فقط"],["حماية=استعمار؟","شكل"],["إسبانيا 1956؟","معظم المغرب"],["استقلال=جلاء؟","مختلفين"],["قيادة وحدها؟","الشعب أساس"],["1882=1914=1922؟","مختلفين"],["مصر سلمية فقط؟","لأ"]]},
+{id:11,title:"مرتكزات الدور المصري إقليميًّا ودوليًّا",
+content:`<h4>أولًا: الموقع الجيوسياسي</h4><p>مصر في قلب الأحداث. جمال حمدان: "ملتقى الدوائر الثلاث: عربية، إفريقية، إسلامية."</p>
+<p><strong>العربية:</strong> قومي وسياسي. <strong>الإفريقية:</strong> قاري. <strong>الإسلامية:</strong> ديني وحضاري.</p>
+<p>قناة السويس: شريان حيوي للتجارة الدولية.</p>
+<h4>ثانيًا: السياسة الخارجية بعد 1952</h4><p><strong>عدم الانحياز:</strong> استقلال القرار. رفض حلف بغداد 1955. مؤتمر باندونج.</p>
+<p><strong>دعم التحرر:</strong> امتداد للأمن القومي.</p>
+<p><strong>الوحدة العربية:</strong> إطار استراتيجي. اتفاقيات دفاع مشترك (مصر-سوريا 1955).</p>
+<p><strong>السيادة وعدم التدخل.</strong></p>
+<h4>ثالثًا: القوة الناعمة</h4><p>تعليم، بحث، فنون، آداب، إعلام، مؤتمرات، بعثات.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> يعني إيه دوائر ثلاث؟</p><p class="speaker2"><strong>الأستاذ:</strong> مصر بتنتمي لثلاث دوائر: عربية وإفريقية وإسلامية.</p><p class="speaker1"><strong>طالب:</strong> وعدم الانحياز؟</p><p class="speaker2"><strong>الأستاذ:</strong> مش تابع لأي معسكر، لكن مشارك بفعالية.</p></div>`,
+highlight:`قناة السويس شريان حيوي. أي اضطراب فيها بيأثر على الاقتصاد العالمي.`,
+summary:`<p><strong>الخلاصة:</strong> موقع جيوسياسي فريد. سياسة: عدم انحياز، دعم تحرر، وحدة عربية، سيادة. قوة ناعمة.</p>`,
+definitions:[["الموقع الجيوسياسي","موقع استراتيجي"],["الدوائر الثلاث","عربية، إفريقية، إسلامية"],["عدم الانحياز","استقلال قرار مع مشاركة"],["القوة الناعمة","تأثير بالثقافة"],["حلف بغداد","1955"]],
+dates:[["1955","باندونج وحلف بغداد"],["1955","مصر-سوريا"],["1956","التأميم"]],
+figures:[["جمال حمدان","شخصية مصر"],["ناصر","عدم الانحياز"]],
+traps:[["الموقع=الدور؟","مختلفين"],["الموقع وحده؟","لأ"],["ثلاث=أربع؟","ثلاث"],["الإسلامية=العربية؟","مختلفين"],["عدم انحياز=حياد؟","مختلفين"],["عدم انحياز=عدم مشاركة؟","لأ"],["ناعمة=صلبة؟","مختلفين"],["الناعمة ضعيفة؟","لأ"],["الأزهر=الكنيسة؟","مختلفين"],["مصر عربية فقط؟","لأ"],["إفريقيا=العالم العربي؟","مختلفين"],["القناة مصرية دائمًا؟","تأممت 1956"],["تأميم=احتلال؟","مختلفين"],["مصر قوة عظمى؟","إقليمية"],["إقليمي=دولي؟","مختلفين"],["الناعمة=الإعلام؟","أوسع"],["خارجية=داخلية؟","مختلفين"],["مصر انعزلت؟","لأ"],["الوحدة=الاتحاد؟","مختلفين"],["تركت دورها؟","لأ"],["باندونج=بغداد؟","مختلفين"],["عدم الانحياز انتهى؟","لأ"]]},
+{id:12,title:"دور مصر في دعم حركات التحرر الوطني",
+content:`<h4>أولًا: الجزائر</h4><p><strong>سياسي:</strong> اعتراف، فتح أبواب، مكاتب. <strong>عسكري:</strong> سلاح، تمويل، معسكرات تدريب. <strong>إعلامي:</strong> صوت العرب. <strong>ثقافي:</strong> بعثات، الأزهر.</p>
+<h4>ثانيًا: اليمن</h4><p>ثورة 26 سبتمبر 1962. <strong>سياسي:</strong> دعم. <strong>عسكري:</strong> قوات، سلاح، تدريب. <strong>إعلامي:</strong> صوت العرب.</p>
+<h4>ثالثًا: العراق</h4><p>دعم التخلص من النفوذ البريطاني. تأييد ثورة 14 يوليو 1958. معارضة حلف بغداد 1955.</p>
+<h4>رابعًا: جنوب إفريقيا</h4><p>رفض الفصل العنصري. دعم المؤتمر الوطني الإفريقي (مانديلا). صوت العرب.</p>
+<p><strong>النتيجة:</strong> الإفراج عن مانديلا 1990. انتهاء النظام في التسعينيات.</p>`,
+dialogue:`<div class="dialogue"><p class="speaker1"><strong>طالب:</strong> مصر دعمت الجزائر إزاي؟</p><p class="speaker2"><strong>الأستاذ:</strong> سياسي، عسكري، إعلامي، ثقافي.</p><p class="speaker1"><strong>طالب:</strong> وجنوب إفريقيا؟</p><p class="speaker2"><strong>الأستاذ:</strong> دعمت المؤتمر الوطني الإفريقي وصوت العرب.</p></div>`,
+highlight:`صوت العرب كانت سلاح مصر الأقوى. من القاهرة تبث لكل الوطن العربي.`,
+summary:`<p><strong>الخلاصة:</strong> مصر دعمت الجزائر واليمن والعراق وجنوب إفريقيا. سياسي، عسكري، إعلامي، ثقافي.</p>`,
+definitions:[["جبهة التحرير","قادت الجزائر"],["صوت العرب","إذاعة مصرية"],["حلف بغداد","1955"],["الفصل العنصري","تمييز"],["المؤتمر الوطني","حزب مانديلا"]],
+dates:[["1954","ثورة الجزائر"],["1955","حلف بغداد"],["1956","العدوان"],["1958","ثورة العراق"],["1962","استقلال الجزائر وثورة اليمن"],["1990","الإفراج عن مانديلا"]],
+figures:[["ناصر","دعم التحرر"],["مانديلا","جنوب إفريقيا"],["بن بلة","الجزائر"],["بومدين","الجزائر"]],
+traps:[["سياسي=عسكري؟","مختلفين"],["الجزائر فقط؟","4 دول"],["الجزائر=المغرب؟","مختلفين"],["اليمن سياسي فقط؟","لأ"],["26 سبتمبر=14 يوليو؟","مختلفين"],["العراق بعد 1958؟","قبل وبعد"],["بغداد=الناتو؟","مختلفين"],["مصر ضد الوحدة؟","لأ"],["الوحدة=الاتحاد؟","مختلفين"],["جنوب إفريقيا 1990؟","الإفراج فقط"],["الفصل=التمييز؟","مختلفين"],["مانديلا مصري؟","لأ"],["المؤتمر=منظمة الوحدة؟","مختلفين"],["دعم عسكري فقط؟","شامل"],["صوت العرب=إذاعة القاهرة؟","مختلفين"],["الدعم مجاني؟","تكاليف"],["القومي=الإقليمي؟","مختلفين"],["مصر أهملت الأمن؟","ربطت"],["الدعم=التدخل؟","مختلفين"],["الدعم انتهى 1970؟","استمر"],["1954=1956=1958=1962؟","مختلفين"],["الجزائر بالسلاح فقط؟","شامل"]]}
+];
+
+// Quizzes data
+const quizzes={};
+lessons.forEach(l=>{
+  quizzes[l.id]=[];
+  const t=l.traps.slice(0,5);
+  t.forEach((tr,i)=>{
+    quizzes[l.id].push({
+      q:tr[0],
+      o:[tr[1],tr[2]||"الإجابة الصحيحة", "لا شيء مما سبق","كل ما سبق"],
+      c:1,
+      e:tr[2]||tr[1]
+    });
+  });
+});
+
+function renderLessons(){
+  document.getElementById('lessonsContainer').innerHTML=lessons.map(l=>`
+    <div class="lesson" id="lesson-${l.id}">
+      <div class="lesson-header"><div class="lesson-num">${l.id}</div><div class="lesson-title">${l.title}</div></div>
+      <div class="lesson-section"><h4>📖 الشرح</h4>${l.content}</div>
+      <div class="lesson-section"><h4>💬 حوار</h4>${l.dialogue}</div>
+      <div class="highlight">${l.highlight}</div>
+      <div class="summary">${l.summary}</div>
+      <div class="meta-grid">
+        <div class="meta-card"><h5>📖 التعريفات</h5><ul>${l.definitions.map(d=>`<li><strong>${d[0]}:</strong> ${d[1]}</li>`).join('')}</ul></div>
+        <div class="meta-card"><h5>📅 التواريخ</h5><ul>${l.dates.map(d=>`<li><strong>${d[0]}:</strong> ${d[1]}</li>`).join('')}</ul></div>
+        <div class="meta-card"><h5>👤 الشخصيات</h5><ul>${l.figures.map(f=>`<li><strong>${f[0]}:</strong> ${f[1]}</li>`).join('')}</ul></div>
+      </div>
+    </div>`).join('');
+}
+
+function renderTraps(){
+  document.getElementById('trapFilters').innerHTML=`<button class="filter-btn active" onclick="filterTrapsByLesson(0,this)">الكل</button>`+lessons.map(l=>`<button class="filter-btn" onclick="filterTrapsByLesson(${l.id},this)">الدرس ${l.id}</button>`).join('');
+  displayTraps(lessons);
+}
+function displayTraps(arr){
+  document.getElementById('trapsContainer').innerHTML=arr.map(l=>`
+    <div class="lesson" style="border-right-color:var(--trap)">
+      <div class="lesson-header" style="border-bottom-color:var(--trap)">
+        <div class="lesson-num" style="background:linear-gradient(135deg,var(--trap),#e74c3c)">${l.id}</div>
+        <div class="lesson-title" style="color:var(--trap)">فخاخ: ${l.title}</div>
+      </div>
+      ${l.traps.map((t,i)=>`<div class="trap-card" data-num="${i+1}"><h5>${t[0]}</h5><div class="wrong">${t[1]}</div><div class="right">${t[2]||t[1]}</div></div>`).join('')}
+    </div>`).join('');
+}
+function filterTrapsByLesson(id,btn){
+  document.querySelectorAll('#trapFilters .filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  displayTraps(id===0?lessons:lessons.filter(l=>l.id===id));
+}
+function filterTraps(){
+  const q=document.getElementById('trapSearch').value.toLowerCase();
+  if(!q){displayTraps(lessons);return;}
+  displayTraps(lessons.map(l=>({...l,traps:l.traps.filter(t=>t[0].toLowerCase().includes(q)||t[1].toLowerCase().includes(q))})).filter(l=>l.traps.length>0));
+}
+
+function renderQuizFilters(){
+  document.getElementById('quizFilters').innerHTML=`<button class="filter-btn active" onclick="showQuiz(0,this)">الكل</button>`+lessons.map(l=>`<button class="filter-btn" onclick="showQuiz(${l.id},this)">الدرس ${l.id}</button>`).join('');
+  showQuiz(0);
+}
+function showQuiz(id,btn){
+  document.querySelectorAll('#quizFilters .filter-btn').forEach(b=>b.classList.remove('active'));
+  if(btn)btn.classList.add('active');
+  const toShow=id===0?lessons.map(l=>l.id):[id];
+  document.getElementById('quizContainer').innerHTML=toShow.map(lid=>{
+    const l=lessons.find(x=>x.id===lid);
+    const qs=quizzes[lid]||[];
+    return `<div class="quiz-box"><h4>❓ اختبار الدرس ${lid}: ${l.title}</h4>
+      ${qs.map((q,i)=>`<div class="quiz-q" data-lesson="${lid}" data-q="${i}">
+        <div class="q-text">${i+1}. ${q.q}</div>
+        <div class="quiz-options">${q.o.map((o,j)=>`<button class="quiz-opt" onclick="answerQuiz(this,${lid},${i},${j},${q.c})">${o}</button>`).join('')}</div>
+        <div class="quiz-explanation">💡 ${q.e}</div>
+      </div>`).join('')}
+      <div class="quiz-score" id="score-${lid}">النتيجة: 0 / ${qs.length}</div></div>`;
+  }).join('');
+}
+function answerQuiz(btn,lesson,qIdx,sel,correct){
+  const p=btn.closest('.quiz-q');
+  if(p.dataset.answered)return;
+  p.dataset.answered='true';
+  const opts=p.querySelectorAll('.quiz-opt');
+  opts.forEach(o=>o.disabled=true);
+  if(sel===correct){btn.classList.add('correct');p.dataset.score='1';}
+  else{btn.classList.add('wrong');opts[correct].classList.add('correct');p.dataset.score='0';}
+  p.querySelector('.quiz-explanation').classList.add('show');
+  const s=document.getElementById(`score-${lesson}`);
+  if(s){
+    const all=document.querySelectorAll(`.quiz-q[data-lesson="${lesson}"]`);
+    let total=0;all.forEach(q=>{if(q.dataset.score==='1')total++;});
+    s.textContent=`النتيجة: ${total} / ${all.length}`;
+    s.style.color=total===all.length?'var(--ok)':total>=all.length*0.6?'var(--gold)':'var(--trap)';
+  }
+}
+
+const memoryPairs=[
+{p:"مينا",d:"وحّد القطرين 3200 ق.م",i:"👑"},
+{p:"أحمس الأول",d:"طرد الهكسوس",i:"⚔️"},
+{p:"الإسكندر",d:"أسس الإسكندرية",i:"🏛️"},
+{p:"عمرو بن العاص",d:"فتح مصر 641م",i:"🕌"},
+{p:"صلاح الدين",d:"أسس الدولة الأيوبية",i:"🛡️"},
+{p:"محمد علي",d:"بنى مصر الحديثة",i:"🏗️"},
+{p:"سعد زغلول",d:"قاد ثورة 1919",i:"✊"},
+{p:"جمال عبد الناصر",d:"أمم قناة السويس",i:"🌊"}
+];
+let memoryState={flipped:[],matched:0,moves:0};
+function initMemoryGame(){
+  const cards=[];
+  memoryPairs.forEach((p,i)=>{
+    cards.push({id:i,type:'name',text:p.p,icon:p.i});
+    cards.push({id:i,type:'desc',text:p.d,icon:'📜'});
+  });
+  cards.sort(()=>Math.random()-0.5);
+  memoryState={flipped:[],matched:0,moves:0};
+  updateGameInfo();
+  document.getElementById('memoryGrid').innerHTML=cards.map(c=>`
+    <div class="memory-card" data-id="${c.id}" data-type="${c.type}" onclick="flipCard(this)">
+      <div class="memory-inner">
+        <div class="memory-face memory-front">${c.icon}</div>
+        <div class="memory-face memory-back">${c.text}</div>
+      </div>
+    </div>`).join('');
+}
+function flipCard(card){
+  if(card.classList.contains('flipped')||card.classList.contains('matched'))return;
+  if(memoryState.flipped.length>=2)return;
+  card.classList.add('flipped');
+  memoryState.flipped.push(card);
+  if(memoryState.flipped.length===2){
+    memoryState.moves++;updateGameInfo();
+    const [a,b]=memoryState.flipped;
+    if(a.dataset.id===b.dataset.id&&a.dataset.type!==b.dataset.type){
+      setTimeout(()=>{
+        a.classList.add('matched');b.classList.add('matched');
+        memoryState.matched++;memoryState.flipped=[];updateGameInfo();
+        if(memoryState.matched===8)setTimeout(()=>alert(`🎉 مبروك! خلصت في ${memoryState.moves} حركة!`),300);
+      },400);
+    }else{
+      setTimeout(()=>{a.classList.remove('flipped');b.classList.remove('flipped');memoryState.flipped=[];},800);
+    }
+  }
+}
+function updateGameInfo(){
+  document.getElementById('gameInfo').textContent=`الحركات: ${memoryState.moves} | المطابقات: ${memoryState.matched} / 8`;
+}
+
+function renderDefs(){
+  const all=[];
+  lessons.forEach(l=>l.definitions.forEach(d=>all.push({...d,lesson:l.id,lessonTitle:l.title})));
+  document.getElementById('defsContainer').innerHTML=`<div class="grid">${all.map(d=>`
+    <div class="card" style="border-right-color:var(--nile)">
+      <h3>${d[0]}</h3><p>${d[1]}</p>
+      <small style="color:var(--gold);margin-top:.5rem;display:block">الدرس ${d.lesson}: ${d.lessonTitle}</small>
+    </div>`).join('')}</div>`;
+}
+function filterDefs(){
+  const q=document.getElementById('defSearch').value.toLowerCase();
+  document.querySelectorAll('#defsContainer .card').forEach(c=>{c.style.display=c.textContent.toLowerCase().includes(q)?'block':'none';});
+}
+function renderDates(){
+  const all=[];
+  lessons.forEach(l=>l.dates.forEach(d=>all.push({...d,lesson:l.id})));
+  all.sort((a,b)=>{
+    const pa=parseInt(a[0].replace(/[^0-9]/g,''))||0;
+    const pb=parseInt(b[0].replace(/[^0-9]/g,''))||0;
+    const aBC=a[0].includes('ق.م');const bBC=b[0].includes('ق.م');
+    if(aBC&&!bBC)return -1;if(!aBC&&bBC)return 1;
+    return aBC?pb-pa:pa-pb;
+  });
+  document.getElementById('datesContainer').innerHTML=all.map(d=>`
+    <div class="timeline-item"><div class="timeline-year">${d[0]}</div><div class="timeline-event">${d[1]}</div>
+    <small style="color:var(--gold);font-size:.8rem">الدرس ${d.lesson}</small></div>`).join('');
+}
+function renderFigs(){
+  const all=[];
+  lessons.forEach(l=>l.figures.forEach(f=>all.push({...f,lesson:l.id,lessonTitle:l.title})));
+  document.getElementById('figsContainer').innerHTML=all.map(f=>`
+    <div class="card"><div class="card-icon">👤</div><h3>${f[0]}</h3><p>${f[1]}</p>
+    <small style="color:var(--gold);margin-top:.5rem;display:block">الدرس ${f.lesson}</small></div>`).join('');
+}
+function filterFigs(){
+  const q=document.getElementById('figSearch').value.toLowerCase();
+  document.querySelectorAll('#figsContainer .card').forEach(c=>{c.style.display=c.textContent.toLowerCase().includes(q)?'block':'none';});
+}
+function renderConnections(){
+  const conns=[
+    {t:"مفهوم الدولة ← تطبيق على مصر القديمة",d:"الدرس 1 يشرح الأركان، والدرس 2 يطبقها على مصر القديمة",links:[1,2]},
+    {t:"العصر الوسيط ← العصر الحديث",d:"الدرس 3 ينتهي بالعثمانيين 1517، والدرس 4 يبدأ بالحملة الفرنسية 1798",links:[3,4]},
+    {t:"الاحتلال ← المقاومة",d:"الدرس 5 يشرح آليات الاحتلال، والدرس 6 يشرح المقاومة",links:[5,6]},
+    {t:"المقاومة ← ثورة 23 يوليو",d:"الدرس 6 ينتهي بـ1919، والدرس 7 يبدأ بعوامل 1952",links:[6,7]},
+    {t:"ثورة 23 يوليو ← الاستعمار الجديد",d:"الدرس 7 يشرح الاستقلال، والدرس 8 يشرح الاستعمار الجديد",links:[7,8]},
+    {t:"التحرر الفرنسي/الإيطالي ← البريطاني/الإسباني",d:"الدرسان 9 و10 متكاملان",links:[9,10]},
+    {t:"مرتكزات الدور ← دعم حركات التحرر",d:"الدرس 11 إطار نظري، والدرس 12 تطبيق",links:[11,12]},
+    {t:"مقاومة الاحتلال القديم ← الحديث ← العربي",d:"خط واحد: الدرس 2 (قديم)، 6 (حديث)، 9-10 (عربي)",links:[2,6,9,10]},
+    {t:"التحولات الحديثة ← سياسات الاحتلال ← الدور المصري",d:"كيف تحولت مصر من تابعة لدولة ذات دور",links:[4,5,11]},
+    {t:"محمد علي ← إسماعيل ← الاحتلال",d:"محمد علي بنى، إسماعيل أغرق، الاحتلال جاء",links:[4,5]},
+    {t:"مصطفى كامل ← محمد فريد ← سعد زغلول",d:"تطور الحركة الوطنية",links:[6]},
+    {t:"نكبة 1948 ← ثورة 23 يوليو",d:"النكبة كشفت ضعف النظام",links:[7]},
+    {t:"تأميم القناة ← العدوان الثلاثي",d:"التأميم أدى للعدوان",links:[7]},
+    {t:"صوت العرب ← دعم حركات التحرر",d:"أداة مصر الأساسية",links:[12]},
+    {t:"حلف بغداد ← معارضة مصر",d:"مصر عارضته لأنه أداة غربية",links:[11,12]}
+  ];
+  document.getElementById('connContainer').innerHTML=conns.map(c=>`
+    <div class="lesson" style="border-right-color:var(--nile)">
+      <h3 style="color:var(--nile);margin-bottom:.5rem">🔗 ${c.t}</h3><p>${c.d}</p>
+      <div style="margin-top:.5rem">${c.links.map(l=>`<span style="background:var(--gold);color:var(--dark);padding:.2rem .6rem;border-radius:20px;font-size:.8rem;margin-left:.3rem">الدرس ${l}</span>`).join('')}</div>
+    </div>`).join('');
+}
+
+function showTab(id,btn){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+  if(btn)btn.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(id==='charts'&&!window.chartsInit){window.chartsInit=true;setTimeout(renderCharts,100);}
+  if(id==='maps'&&!window.mapInit){window.mapInit=true;setTimeout(renderMap,100);}
+}
+function toggleTheme(){
+  const b=document.body;const btn=document.getElementById('themeBtn');
+  if(b.getAttribute('data-theme')==='dark'){b.removeAttribute('data-theme');btn.textContent='🌙';}
+  else{b.setAttribute('data-theme','dark');btn.textContent='☀️';}
+}
+
+let chartsInit=false;
+function renderCharts(){
+  if(chartsInit)return;chartsInit=true;
+  new Chart(document.getElementById('chartDates'),{type:'bar',data:{labels:lessons.map(l=>'د'+l.id),datasets:[{label:'عدد التواريخ',data:lessons.map(l=>l.dates.length),backgroundColor:'rgba(201,162,39,.7)',borderColor:'#c9a227',borderWidth:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,ticks:{color:'#888'}},x:{ticks:{color:'#888'}}}}});
+  new Chart(document.getElementById('chartFigs'),{type:'doughnut',data:{labels:lessons.map(l=>'د'+l.id),datasets:[{data:lessons.map(l=>l.figures.length),backgroundColor:['#c9a227','#1e6091','#27ae60','#c0392b','#8e44ad','#e67e22','#16a085','#d35400','#2980b9','#9b59b6','#f39c12','#34495e']}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{color:'#888',padding:10}}}}});
+  new Chart(document.getElementById('chartTraps'),{type:'bar',data:{labels:lessons.map(l=>'د'+l.id),datasets:[{label:'عدد الفخاخ',data:lessons.map(l=>l.traps.length),backgroundColor:'rgba(192,57,43,.7)',borderColor:'#c0392b',borderWidth:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,ticks:{color:'#888'}},x:{ticks:{color:'#888'}}}}});
+  new Chart(document.getElementById('chartDefs'),{type:'line',data:{labels:lessons.map(l=>'د'+l.id),datasets:[{label:'عدد التعريفات',data:lessons.map(l=>l.definitions.length),borderColor:'#1e6091',backgroundColor:'rgba(30,96,145,.2)',fill:true,tension:.4,pointRadius:6,pointBackgroundColor:'#c9a227'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#888'}}},scales:{y:{beginAtZero:true,ticks:{color:'#888'}},x:{ticks:{color:'#888'}}}}});
+}
+
+let mapInit=false;
+function renderMap(){
+  if(mapInit)return;mapInit=true;
+  const map=L.map('map').setView([26,30],4);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
+  const locs=[
+    {n:"مصر",c:[26.8,30.8],col:"#8e44ad",i:"قلب الأحداث"},
+    {n:"الإسكندرية",c:[31.2,29.9],col:"#f39c12",i:"أسسها الإسكندر 332 ق.م"},
+    {n:"القاهرة",c:[30.04,31.24],col:"#f39c12",i:"أسسها الفاطميون 969م"},
+    {n:"قناة السويس",c:[30.5,32.3],col:"#8e44ad",i:"تأممت 1956"},
+    {n:"الجزائر",c:[28,1.7],col:"#c0392b",i:"احتلال فرنسي 1830"},
+    {n:"تونس",c:[34,9.5],col:"#c0392b",i:"حماية فرنسية 1881"},
+    {n:"المغرب",c:[31.8,-7.1],col:"#e67e22",i:"حماية 1912، مقاومة الخطابي"},
+    {n:"ليبيا",c:[26.3,17.2],col:"#27ae60",i:"احتلال إيطالي 1911، عمر المختار"},
+    {n:"موريتانيا",c:[20.3,-10.3],col:"#c0392b",i:"مقاومة قبلية"},
+    {n:"سوريا",c:[34.8,39],col:"#c0392b",i:"انتداب 1920، ثورة 1925"},
+    {n:"لبنان",c:[33.9,35.5],col:"#c0392b",i:"انتداب 1920"},
+    {n:"العراق",c:[33.2,43.7],col:"#2980b9",i:"انتداب 1920، ثورة 1920"},
+    {n:"فلسطين",c:[31.9,35.2],col:"#2980b9",i:"انتداب 1920، بلفور 1917"},
+    {n:"اليمن",c:[15.5,48],col:"#8e44ad",i:"ثورة 1962، دعم مصري"},
+    {n:"جنوب إفريقيا",c:[-30,24],col:"#8e44ad",i:"الفصل العنصري، دعم مانديلا"},
+    {n:"عدن",c:[12.8,45],col:"#2980b9",i:"بريطاني 1839"},
+    {n:"السودان",c:[15.5,32.5],col:"#2980b9",i:"خط عرض 22 (1899)"},
+    {n:"القسطنطينية",c:[41,29],col:"#f39c12",i:"العثمانيون دخلوا مصر 1517"}
+  ];
+  locs.forEach(l=>{
+    L.circleMarker(l.c,{radius:10,fillColor:l.col,color:'#fff',weight:2,opacity:1,fillOpacity:.8}).addTo(map)
+    .bindPopup(`<div style="text-align:right;direction:rtl;font-family:Tahoma"><strong style="color:${l.col};font-size:1.1rem">${l.n}</strong><br><span style="font-size:.9rem">${l.i}</span></div>`);
+  });
+}
+
+window.addEventListener('scroll',()=>{
+  const b=document.getElementById('scrollBtn');
+  if(window.scrollY>500)b.classList.add('show');else b.classList.remove('show');
+});
+
+renderLessons();
+renderTraps();
+renderQuizFilters();
+renderDefs();
+renderDates();
+renderFigs();
+renderConnections();
+initMemoryGame();
+console.log('%c🏛️ يوسف بيحط على التاريخ','font-size:20px;color:#c9a227;font-weight:bold');
+</script>
 </body>
 </html>
